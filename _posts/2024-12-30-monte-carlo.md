@@ -9,18 +9,35 @@ image: cutting.jpg
 
 # The Bootstrap
 
-The idea of the bootstrap is astonishingly simple. In short, it is the estimation of quantities of interest via Monte Carlo estimates from the empirical distribution. We will explain these concepts one by one for the uninitated.
+The idea of the bootstrap is astonishingly simple. In short, it is the estimation of quantities of interest via Monte Carlo estimates from the empirical distribution. We will build up these concepts one by one.
 
 ## Empirical Distribution
 
-Let's say we have a sample of 5 numerical values, [1,5,3.5,0,0.1], and we want to know how confident we can be that the mean of this sample is representative of the population mean. Usually, we would depend upon distributional assumptions or the central limit theorem to produce this estimate.
+We will begin with a simple case.
+
+Given a sample of size _N_, $$x_{1},\cdots,x_{N} \in \mathbb{R}$$, the empirical distribution is just
+
+$$
+P[X = x_i] = \frac{1}{N} \hspace{10pt}
+$$
+
+In other words, it is just a discrete uniform distribution over the sample.
+
+## Empirical Distribution as Maximum Likelihood Distribution
+We can think of the empirical distribution as the maximum likelihood estimate of the data-generating distribution when the only asssumptions we make are that the samples are independent and identically dsitributed.
+
+
+
+
+Let's say we have the following  sample of 5 numerical values, [1, 5, 3.5, 0, 0.1], and we want to know how confident we can be that the mean is representative of the population mean. Usually, we would depend upon distributional assumptions or the central limit theorem to produce an estimate of this kind, but if we want our estimate to be robust, we must loosen our assumptions as far as possible. One way to do this is to first estimate the true distribution from which the sample has been drawn. 
+If we only maintain the assumptions of independent and identically distributed samples, then the maximum likelihood estimate of the c
 
  Although the empirical distribution is with good reason defined in terms of a cumulative distribution function, the _idea_ of the empirical distribution is much clearer when presented in the guise of a probability distribution function.
 
 
  them *italicized*, using *astericks* or _underscores_, or making them **bold**, using **double astericks** or __double underscores__. Of course, you can combine those two formats, with both _**bold and italicized**_ text, using any combination of the above syntax. You can also add a strikethrough to text using a ~~double tilde~~.
 
-## Headings
+
 
 Sometimes it is useful to have different levels of headings to structure your documents. Start lines with `#` to create headings. Multiple `##` in a row denote smaller heading size. The following demonstrate the full range of heading sizes:
 
