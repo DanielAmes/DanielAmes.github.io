@@ -15,16 +15,19 @@ The idea of the bootstrap is astonishingly simple. In short, it is the estimatio
 
 We will begin with a simple case.
 
-Given a sample of size _N_, $$x_{1},\cdots,x_{N} \in \mathbb{R}$$, the empirical distribution is just
+Given a sample of size _N_, $$x_{1},\cdots,x_{N} \in \mathbb{R}$$, the empirical distribution is
 
 $$
 P[X = x_i] = \frac{1}{N} \hspace{10pt}
 $$
 
-In other words, it is just a discrete uniform distribution over the sample.
+In other words, it is a discrete uniform distribution over the sample values (rather than over the natural numbers).
+
+Why should we care about this entity? The most obvious reason is that in a strict sense it is our _best guess_ of the true distribution if we greatly limit our assumptions about that distribution. In particular, if our only assumptions about the sample is that it is I.I.D., then the empirical distribution is the maximum likelihood estimate (MLE) of the true distribution[^1].
+ To see why this is so, consider the likelihood function of the distribution function
 
 ## Empirical Distribution as Maximum Likelihood Distribution
-We can think of the empirical distribution as the maximum likelihood estimate of the data-generating distribution when the only asssumptions we make are that the samples are independent and identically dsitributed.
+We can think of the empirical distribution as the maximum likelihood estimate of the data-generating distribution when we relax our.
 
 
 
@@ -172,3 +175,6 @@ HTML defines a long list of available inline tags, which you can mix with Markdo
 Can be created by having three or more hyphens `---`, asterisks `***`, or underscores `___`:
 
 ---
+
+[^1]: This is the content of the footnote.
+
