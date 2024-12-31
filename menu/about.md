@@ -1,19 +1,15 @@
 ---
 layout: page
-title: Welcome to Lagrange!
+title: Welcome to My Blog
 permalink: /about
 ---
 
-Lagrange is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
+I created this blog primarily to serve as a personal notetaking archive, but at the same time I hope it will one day become a house of many mansions, peopled by representatives of all the regions of my mind.
 
-### Getting Started
+### Plans
 
-[Getting Started]({{ site.github.url }}{% post_url 2015-10-10-getting-started %}): getting started with installing Lagrange, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
+I would like to make a habit of posting weekly.
 
-### Example Content
+### Principle of Principles
 
-[Text and Formatting]({{ site.github.url }}{% post_url 2014-01-01-text-formatting-examples %})
-
-### Questions?
-
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [tweet at me](https://twitter.com/intent/tweet?text=My%question%about%Lagrange%is:%&amp;via=paululele), or [file a GitHub issue](https://github.com/lenpaul/lagrange/issues/new).
+If there is any guiding philosphy behind the structure of my posts, it is that one cannot thoroughly understood a mathematical or statistics concept until one has reconstructed it from the foundation up, and indeed I believe that this kind of foundational understanding makes possible and therefore must necessarily precede the wise application of the concept to practical problems. Note that the foundation-building that I speak of is not one composed of mathematical formalisms such as measure theory. I speak rather of the synthesis of simple ideas into complex ones.

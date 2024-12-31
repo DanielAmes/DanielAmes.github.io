@@ -9,7 +9,7 @@ image: cutting.jpg
 
 # The Bootstrap
 
-The idea of the bootstrap is astonishingly simple. In short, it is the estimation of quantities of interest via Monte Carlo estimates from the empirical distribution. We will build up these concepts one by one.
+The idea of the bootstrap is quite simple. it is the estimation of quantities of interest via Monte Carlo estimates from the empirical distribution. We will build up these concepts one by one.
 
 ## Empirical Distribution
 
@@ -40,7 +40,7 @@ If we only maintain the assumptions of independent and identically distributed s
 
  them *italicized*, using *astericks* or _underscores_, or making them **bold**, using **double astericks** or __double underscores__. Of course, you can combine those two formats, with both _**bold and italicized**_ text, using any combination of the above syntax. You can also add a strikethrough to text using a ~~double tilde~~.
 
-
+## Monte Carlo Estimator
 
 Sometimes it is useful to have different levels of headings to structure your documents. Start lines with `#` to create headings. Multiple `##` in a row denote smaller heading size. The following demonstrate the full range of heading sizes:
 
