@@ -4,7 +4,7 @@ title: "The Bootstrap"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
-image: 
+image: cutting.jpg
 ---
 
 # The Bootstrap
