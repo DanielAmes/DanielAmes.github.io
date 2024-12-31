@@ -26,14 +26,7 @@ Why should we care about this object? The most obvious reason is that in a stric
 Apart from its status as an MLE, we care about the empirical distribution because, unlike the unknown true distribution, it is a distribution that we can sample from though computational means, opening up to us the world of Monte Carlo estimates.
 
 
-## Empirical Distribution as Maximum Likelihood Distribution
-We can think of the empirical distribution as the maximum likelihood estimate of the data-generating distribution when we relax our.
-
-
-
-
-Let's say we have the following  sample of 5 numerical values, [1, 5, 3.5, 0, 0.1], and we want to know how confident we can be that the mean is representative of the population mean. Usually, we would depend upon distributional assumptions or the central limit theorem to produce an estimate of this kind, but if we want our estimate to be robust, we must loosen our assumptions as far as possible. One way to do this is to first estimate the true distribution from which the sample has been drawn. 
-If we only maintain the assumptions of independent and identically distributed samples, then the maximum likelihood estimate of the.
+## Monte Carlo Estimation
 
 [^1]: This is the content of the footnote.
 
