@@ -28,16 +28,17 @@ Apart from its status as an MLE, we care about the empirical distribution becaus
 
 ## Monte Carlo Simulation and Estimation
 
-In probability and statistics, problems often arise that can be easily stated in terms of the outcomes of well-defined random processes but for which an analytic solution is hard to come by. To take an arbitrary example, we might like to know what the distribution of the ratio of the maximum and minimum of a sample of size $n$ from a standard normal distribution would look like, that is,
+In probability and statistics, problems often arise that can be easily stated in terms of the outcomes of well-defined data-generating mechanisms but for which a closed-form solution is hard to come by. To take an arbitrary example, we might like to know what the distribution of the ratio of the maximum and minimum of a sample of size $n$ from a standard normal distribution would look like, that is,
 
 $$
 \text{If  } \boldsymbol{X}_{n} \sim N(\boldsymbol{0}_{n},\boldsymbol{I}_{n\times n})
 $$
+
 $$
-\text{Then } | max(\boldsymbol{X}_{n})/min(\boldsymbol{X}_{n}) |  \sim \text{  ?}
+\text{Then   } | max(\boldsymbol{X}_{n})/min(\boldsymbol{X}_{n}) |  \sim \text{  ?}
 $$
 
-Though to my knowledge no closed form solution to this problem exists, if we simulate samples from a standard normal and then look at the distribution of the desired ratio, then we have solved the problem for most intents and purposes.
+Though to my knowledge no closed form solution to this problem exists, if we simulate samples from a standard normal and then look at the distribution of the desired ratio, we will have solved the problem for most intents and purposes.
 
 [^1]: This is the content of the footnote.
 
