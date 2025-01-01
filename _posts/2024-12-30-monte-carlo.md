@@ -16,7 +16,7 @@ We will begin with a simple case.
 Given a sample, $$x_{1},\cdots,x_{N} \in \mathbb{R}$$, the empirical distribution is simply
 
 $$
-P[X = x_i] = \frac{1}{N} 
+P[X = x_i] = \frac{\text{Count}(x_{i})}{N} 
 $$
 
 In other words, it is a discrete uniform distribution over the sample values (rather than over the natural numbers).
@@ -43,6 +43,7 @@ Though to my knowledge no closed form solution to this problem exists, if we sim
 Figure 1 shows a histogram of 10,000 runs of $n = 100$
 
 ![Figure 1]({{ site.baseurl }}/assets/img/monte_carlo_ex.jpg)
+<figcaption> Figure 1 </figcaption>
 
 [^1]: This is the content of the footnote.
 
