@@ -40,10 +40,34 @@ $$
 
 Though to my knowledge no closed form solution to this problem exists, if we simulate samples from a standard normal and then look at the distribution of the desired ratio, we will have solved the problem for most intents and purposes.
 
-Figure 1 shows a histogram of 10,000 runs of $n = 100$
+Below is displayed a histogram of 10,000 runs of $n = 100$ (code here[^2]).
 
 ![Figure 1]({{ site.baseurl }}/assets/img/monte_carlo_ex.jpg)
-<figcaption> Figure 1 </figcaption>
+
+For this particular value of $n$, the distribution seems to be well approximated by a log-normal.
 
 [^1]: This is the content of the footnote.
+
+[^2]: 
+```R
+library(ggplot2)
+
+
+norm_max_min_sim <- function(samp_size, num_of_runs){
+  samp_mat <- matrix(rnorm(n = samp_size*num_of_runs), nrow = num_of_runs)
+  samp_max <- apply(samp_mat, 1, max)
+  samp_min <- apply(samp_mat, 1, min)
+  samp_ratio <- abs(samp_max/samp_min)
+  samp_df <- data.frame('ratio' = samp_ratio)
+  return(samp_df)
+}
+
+
+ex_1 <- norm_max_min_sim(100, 10000)
+
+
+ggplot(ex_1, aes(x = ratio)) +
+  geom_histogram(fill = "skyblue", color = "black") +
+  theme_minimal()
+```
 
