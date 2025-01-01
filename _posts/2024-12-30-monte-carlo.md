@@ -40,17 +40,15 @@ $$
 
 Though to my knowledge no closed form solution to this problem exists, if we simulate samples from a standard normal and then look at the distribution of the desired ratio, we will have solved the problem for most intents and purposes.
 
-Below is displayed a histogram of 10,000 runs of $n = 100$ (code here[^2]).
+Below is displayed a histogram of 10,000 runs of $n = 100$.
 
 ![Figure 1]({{ site.baseurl }}/assets/img/monte_carlo_ex.jpg)
 
 For this particular value of $n$, the distribution seems to be well approximated by a log-normal.
 
-[^1]: This is the content of the footnote.
 
-[^2]: 
-
-<pre><code class="language-r">
+## Code
+```R
 library(ggplot2)
 
 
@@ -70,4 +68,8 @@ ex_1 <- norm_max_min_sim(100, 10000)
 ggplot(ex_1, aes(x = ratio)) +
   geom_histogram(fill = "skyblue", color = "black") +
   theme_minimal()
-</code></pre>
+```
+[^1]: In the case of finite support, this result is equivalent to the result from plane geometry that states that of all rectangles of a fixed perimeter, the one with the greatest area is the square.
+
+
+
