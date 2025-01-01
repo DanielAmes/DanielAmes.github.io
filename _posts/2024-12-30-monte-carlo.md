@@ -49,6 +49,7 @@ For this particular value of $n$, the distribution seems to be well approximated
 [^1]: This is the content of the footnote.
 
 [^2]: 
+
 ```R
 library(ggplot2)
 
