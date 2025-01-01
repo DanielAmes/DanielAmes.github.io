@@ -50,7 +50,7 @@ For this particular value of $n$, the distribution seems to be well approximated
 
 [^2]: 
 
-```R
+<pre><code class="language-r">
 library(ggplot2)
 
 
@@ -70,5 +70,4 @@ ex_1 <- norm_max_min_sim(100, 10000)
 ggplot(ex_1, aes(x = ratio)) +
   geom_histogram(fill = "skyblue", color = "black") +
   theme_minimal()
-```
-
+</code></pre>
