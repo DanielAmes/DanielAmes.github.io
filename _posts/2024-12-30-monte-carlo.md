@@ -26,7 +26,7 @@ Apart from its status as an MLE, we care about the empirical distribution becaus
 
 ## Monte Carlo Simulation
 
-In probability and statistics, problems often arise that can be easily stated in terms of the outcomes of well-defined data-generating mechanisms but for which a closed-form solution is hard to come by. To take an arbitrary example, we might want to investigate the distribution of the ratio of the max and min of a sample of size $n$ from a standard Guassian, that is,
+In probability and statistics, problems often arise that can be easily stated in terms of the outcomes of well-defined data-generating mechanisms but for which a closed-form solution is hard to come by. To take an arbitrary example of some complexity, we might want to investigate the distribution of the ratio of the max and min of a sample of size $n$ from a standard Guassian, that is,
 
 $$
 \text{If} \hspace{15pt} \boldsymbol{X}_{n} \sim N(\boldsymbol{0}_{n},\boldsymbol{I}_{n\times n})
@@ -44,11 +44,11 @@ Below is displayed a histogram of 10,000 runs of $n = 100$.
 
 In this example, we can see the two ingredients of an important class of Monte Carlo simulations:
 
-1. A well-defined distribution from which we can simulate samples with a computer.
+1. A well-defined distribution from which we can simulate samples with a random number generator.
 
-2. A function of the sample whose distribution we desire to know.
+2. A statistic whose distribution we want to know (that is, a function of the sample).
 
-In its simplest form, the bootstrap is nothing but the application of this kind of Monte Carlo simulation to the empirical distribution of a sample.
+In its most rudimentary form, the bootstrap is nothing but the application of this kind of Monte Carlo simulation to the empirical distribution of a sample.
 
 
 ## Code
@@ -75,7 +75,7 @@ ggplot(ex_1, aes(x = ratio)) +
 ```
 
 ## Footnotes
-[^1]: In the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the one with the greatest area is the square.
+[^1]: In the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the square is the figure with the greatest area.
 
 
 
