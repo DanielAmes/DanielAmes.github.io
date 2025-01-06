@@ -7,7 +7,7 @@ tags: [documentation,sample]
 image: 
 ---
 
-The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, behaving like a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
+The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, like a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
 
 ## Empirical Distribution
 
@@ -19,11 +19,11 @@ $$
 P[X = x_i] = \frac{\text{Count}(x_{i})}{N} 
 $$
 
-Why should we care about this object? The most obvious reason is that in a strict sense it is our _best guess_ of the true distribution if we greatly limit our assumptions about that distribution. In particular, if our only assumptions about the sample is that it is I.I.D., then the empirical distribution is the maximum likelihood estimate (MLE) of the true distribution[^1].
+Why should we care about this object? The most obvious reason is that in a strict sense it is our _best guess_ of the true distribution if we greatly limit our assumptions about that distribution. In particular, if our only assumption about the sample is that it is I.I.D., then the empirical distribution is the maximum likelihood estimate (MLE) of the true distribution[^1].
 
 ## Ideal Bootstrap Estimate
 
-These are the estimates of inferential quantities of interest (standard errors, confidence intervals, etc.) obtained by exhaustively evaluating a statistic (function of a sample) across all possible samples of a certain size from the empirical distribution.
+These are the estimates of inferential quantities of interest (standard errors, confidence intervals, etc.) obtained by evaluating a statistic (function of a sample) across all possible samples of a certain size from the empirical distribution.
 
 
 As the sample size increases, however, such an exhaustive approach becomes computationally infeasible: the number of bootstrap samples to be evaluated for an original sample size of $n$ is $\binom{2n-1}{n}$, which asymptotically is $4^n / \sqrt{n\pi}$.[^2]
@@ -44,7 +44,7 @@ $$
 \text{Then} \hspace{15pt} | \text{max}(\boldsymbol{X}_{n})/\text{min}(\boldsymbol{X}_{n}) |  \sim \text{  ?}
 $$
 
-Though to my knowledge no closed form solution to this problem exists, if we simulate samples from a standard normal and then look at the distribution of the desired ratio, we will have solved the problem for most practical intents and purposes.
+Though to my knowledge no closed-form solution to this problem exists, if we simulate samples from a standard normal and then look at the distribution of the desired ratio, we will have solved the problem for most practical intents and purposes.
 
 Below is displayed a histogram of 10,000 runs of $n = 100$.
 
@@ -86,7 +86,7 @@ ggplot(ex_1, aes(x = ratio)) +
 ```
 ## Sources
 * _An Introduction to the Bootstrap_ by Efron and Tibshirani
-* _All of Nonparametric Statistics_ by Efron and Tibshirani
+* _All of Nonparametric Statistics_ by Wasserman
 
 ## Footnotes
 [^1]: Incidentally, in the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the square is the figure with the greatest area.
