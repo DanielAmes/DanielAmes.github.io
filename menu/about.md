@@ -8,9 +8,7 @@ I created this blog primarily to serve as a personal notetaking archive, but at 
 
 ## Plans
 
-I plan to post weekly, beginning in 2025.
+I plan to post weekly, beginning in January of 2025. To begin, I will mostly be arranging and polishing existing notes of mine.
 
-## Principles
 
-If there is any guiding philosphy behind my posts, it is that one cannot thoroughly understand a mathematical or statistical concept until one has reconstructed it from the foundation up, and indeed I believe that this kind of foundational understanding makes possible and therefore must necessarily precede the sensible application of the concept to practical problems. 
 

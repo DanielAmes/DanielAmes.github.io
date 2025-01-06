@@ -11,7 +11,7 @@ The idea of the bootstrap is quite simple. However, as its name suggests, it is 
 
 ## Empirical Distribution
 
-We will begin with a simple case.
+We will begin with the one-sample case.
 
 Given a sample, $$x_{1},\cdots,x_{N} \in \mathbb{R}$$, the empirical distribution is simply
 
@@ -29,7 +29,7 @@ These are the estimates of inferential quantities of interest (standard errors, 
 As the sample size increases, however, such an exhaustive approach becomes computationally infeasible: the number of bootstrap samples to be evaluated for an original sample size of $n$ is $\binom{2n-1}{n}$, which asymptotically is $4^n / \sqrt{n\pi}$.[^2]
 
 
-We overcome this computational constraint by the application of Monte Carlo methods to the empirical distribution.
+We overcome this computational constraint by approximating the ideal bootstrap estimate using Monte Carlo methods.
 
 
 ## Review of Monte Carlo Simulation and Estimation
