@@ -84,7 +84,9 @@ ggplot(ex_1, aes(x = ratio)) +
   geom_histogram(fill = "skyblue", color = "black") +
   theme_minimal()
 ```
-## Sources:
+## Sources
+* _An Introduction to the Bootstrap_ by Efron and Tibshirani
+* _All of Nonparametric Statistics_ by Efron and Tibshirani
 
 ## Footnotes
 [^1]: Incidentally, in the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the square is the figure with the greatest area.
