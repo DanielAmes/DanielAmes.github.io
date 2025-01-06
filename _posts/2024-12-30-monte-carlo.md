@@ -7,7 +7,7 @@ tags: [documentation,sample]
 image: 
 ---
 
-The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, as if it were a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
+The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, behaving like a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
 
 ## Empirical Distribution
 
@@ -26,10 +26,10 @@ Why should we care about this object? The most obvious reason is that in a stric
 These are the estimates of inferential quantities of interest (standard errors, confidence intervals, etc.) obtained by exhaustively evaluating a statistic (function of a sample) across all possible samples of a certain size from the empirical distribution.
 
 
-As the sample size increases, however, such an exhaustive approach becomes computationally infeasible: the number of bootstrap samples to be evaluated for an original sample size of $n$ is $\binom{2n-1}{n}$[^2], which asymptotically is $4^n / \sqrt{n\pi}$.
+As the sample size increases, however, such an exhaustive approach becomes computationally infeasible: the number of bootstrap samples to be evaluated for an original sample size of $n$ is $\binom{2n-1}{n}$, which asymptotically is $4^n / \sqrt{n\pi}$.[^2]
 
 
-We overcome this obstacle by the application of Monte Carlo methods to the empirical distribution.
+We overcome this computational constraint by the application of Monte Carlo methods to the empirical distribution.
 
 
 ## Review of Monte Carlo Simulation and Estimation
@@ -56,7 +56,10 @@ In this example, we can see the two ingredients of an important class of Monte C
 
 2. A statistic whose distribution we want to know (that is, a function of the sample).
 
-In its most rudimentary form, the bootstrap is nothing but the application of this kind of Monte Carlo simulation to the empirical distribution of a sample.
+In its most rudimentary form, **the bootstrap is nothing but the application of this kind of Monte Carlo simulation to a function of the empirical distribution of a sample**. 
+
+But the beauty and simplicity of the bootstrap lies in the fact that we can choose extremely complex functions of the empirical distrbution without adding complications to the bootstrap procedure.
+
 
 
 ## Code
@@ -86,6 +89,6 @@ ggplot(ex_1, aes(x = ratio)) +
 ## Footnotes
 [^1]: Incidentally, in the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the square is the figure with the greatest area.
 
-[^2]: To see where this binomial coefficient comes from, imagine you are iterating through the original sample in some arbitrary order. You begin with the first value, $x_1$, and you have two choices: you either include an instance of $x_1$ in the bootstrap sample or you move on to $x_2$. This algorithm will necessarily terminate after $2n-1$ steps because it takes that many steps to both produce the desired sample size and iterate through all of the values, and for each bootstrap sample, $n$ of those steps must be the choice of the inclusion of a value. The binomial coefficient $\binom{2n-1}{n}$, then, is the number of ways to select $n$ inclusion steps out of $2n-1$ total steps.
+[^2]: To see where this binomial coefficient comes from, imagine you are iterating through the original sample arranged in an arbitrary order. You begin with the first value, $x_1$, and you have two choices: you either include an instance of $x_1$ in the bootstrap sample or you move on to $x_2$. This algorithm will necessarily terminate after $2n-1$ steps because it takes that many steps to both produce the desired sample size ($n$ steps) and iterate through all of the values ($n-1$ steps), and for each bootstrap sample, $n$ of those steps must be the action of the inclusion of a value. The binomial coefficient $\binom{2n-1}{n}$, then, is the number of ways to select $n$ inclusion steps out of $2n-1$ total steps.
 
 
