@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "The Bootstrap"
+title: "Notes on the Foundations of the Bootstrap"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
 image: 
 ---
 
-The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, as if it were a statistical _perpetuum mobile_, an impression which can be perplexing to one who has only been exposed to the final product and not the reasoning through which it is derived. To dissolve the perplexities of the newly initiated, I will build up the bootstrap from its component parts, beginning with the empirical distribution of the sample. 
+The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, as if it were a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
 
 ## Empirical Distribution
 
@@ -21,10 +21,18 @@ $$
 
 Why should we care about this object? The most obvious reason is that in a strict sense it is our _best guess_ of the true distribution if we greatly limit our assumptions about that distribution. In particular, if our only assumptions about the sample is that it is I.I.D., then the empirical distribution is the maximum likelihood estimate (MLE) of the true distribution[^1].
 
-Apart from its status as an MLE, we care about the empirical distribution because, unlike the unknown true distribution, it is a distribution that we can sample from though computational means, opening up to us the world of Monte Carlo simulation.
+## Ideal Bootstrap Estimate
+
+These are the estimates of inferential quantities of interest (standard errors, confidence intervals, etc.) obtained by exhaustively evaluating a statistic (function of a sample) across all possible samples of a certain size from the empirical distribution.
 
 
-## Monte Carlo Simulation
+As the sample size increases, however, such an exhaustive approach becomes computationally infeasible: the number of bootstrap samples to be evaluated for an original sample size of $n$ is $\binom{2n-1}{n}$[^2], which asymptotically is $4^n / \sqrt{n\pi}$.
+
+
+We overcome this obstacle by the application of Monte Carlo methods to the empirical distribution.
+
+
+## Review of Monte Carlo Simulation and Estimation
 
 In probability and statistics, problems often arise that can be easily stated in terms of the outcomes of well-defined data-generating mechanisms but for which a closed-form solution is hard to come by. To take an arbitrary example of some complexity, we might want to investigate the distribution of the ratio of the max and min of a sample of size $n$ from a standard Guassian, that is,
 
@@ -73,9 +81,11 @@ ggplot(ex_1, aes(x = ratio)) +
   geom_histogram(fill = "skyblue", color = "black") +
   theme_minimal()
 ```
+## Sources:
 
 ## Footnotes
-[^1]: In the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the square is the figure with the greatest area.
+[^1]: Incidentally, in the case of finite support, this result is equivalent to the fact that of all rectangles of a fixed perimeter, the square is the figure with the greatest area.
 
+[^2]: To see where this binomial coefficient comes from, imagine you are iterating through the original sample in some arbitrary order. You begin with the first value, $x_1$, and you have two choices: you either include an instance of $x_1$ in the bootstrap sample or you move on to $x_2$. This algorithm will necessarily terminate after $2n-1$ steps because it takes that many steps to both produce the desired sample size and iterate through all of the values, and for each bootstrap sample, $n$ of those steps must be the choice of the inclusion of a value. The binomial coefficient $\binom{2n-1}{n}$, then, is the number of ways to select $n$ inclusion steps out of $2n-1$ total steps.
 
 
