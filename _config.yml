@@ -10,6 +10,7 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 
+hide_related_posts: true
 # jekyll-paginate configuration
 paginate:            5
 
