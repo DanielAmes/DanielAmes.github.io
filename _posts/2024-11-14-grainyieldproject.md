@@ -27,28 +27,15 @@ We begin by considering the data for a single year single year, 2020, because th
 
 ## Footnotes
 [^1]: The high mutual correlation between the yields of different grains can be seen in the first principal component of the yield figures for the year 2022:
-```R
-Loadings:
-              Comp.1 
-wheat_yield    0.350 
-maize_yield    0.333 
-barley_yield   0.371  
-rice_yield     0.337 
-sorghum_yield  0.348 
-rye_yield      0.368  
-millet_yield   0.340 
-oats_yield     0.378 
-```
 
+Yield Variables       | Loadings              | 
+--------------------- | :-------------------: | 
+Wheat                 | 0.350 
+Maize                 | 0.333 
+Barley                | 0.371
+Rice                  | 0.337
+Sorghum               | 0.348
+Rye                   | 0.368
+Millet                | 0.340
+Oats                  | 0.378 
 
-
-Loadings:
-              Comp.1 
-wheat_yield    0.350 
-maize_yield    0.333 
-barley_yield   0.371  
-rice_yield     0.337 
-sorghum_yield  0.348 
-rye_yield      0.368  
-millet_yield   0.340 
-oats_yield     0.378 
