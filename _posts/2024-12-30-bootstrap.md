@@ -4,7 +4,7 @@ title: "Notes on the Foundations of the Bootstrap"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
-image: 
+hide_related_posts: true
 ---
 
 The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, like a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
