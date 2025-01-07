@@ -20,7 +20,7 @@ To simplify the analysis, we will restrict our attention to grain crops because 
 
 ## Data
 
-The Grain ield data comes from [**Our World in Data**](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [**The World Bank**](https://data.worldbank.org/indicator/AG.CON.FERT.PT.ZS)
+The Grain ield data comes from [Our World in Data](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [The World Bank](https://data.worldbank.org/indicator/AG.CON.FERT.PT.ZS)
 We begin by considering the data for a single year single year, 2020, because that is the most recent year for which complete data is available.
 
 ## Exploratory Visualation
