@@ -14,17 +14,17 @@ Thus, in an experiment where the amount of fertilizer is made to vary across sub
 
 ![Figure 1]({{ site.baseurl }}/assets/img/Phosphorus.png)
 
-In this paper, we investigate whether the same effect is visible on a global scale, where each country's grain yield for a given year is represented as a single data point, or whether on the contrary, other determinants of differences in yield between countries overshadow the effect of fertilizer at scale. 
+We investigated whether the same effect is visible on a global scale, where each country's grain yield for a given year is represented as a single data point, or whether on the contrary, other determinants of differences in yield between countries overshadow the effect of fertilizer at scale. 
 
-Furthermore, we look at the trajectories of certain countries along the fertilizer saturation curve over time. The focus, however, is not upon time series analysis.
+Furthermore, we looked at the trajectories of certain countries along the fertilizer saturation curve over time.
 
-To simplify the analysis, we will restrict our attention to grain crops because (1) most countries produce significant quantities of at least one grain crop, (2) yields across different grain crops are highly correlated with one another, and (3) grain crops account for more than half of all calories consumed in the world and are therefore of extreme practical importance.
+To simplify the analysis, we restricted our attention to grain crops because (1) most countries produce significant quantities of at least one grain crop, (2) yields across different grain crops are highly correlated with one another, and (3) grain crops account for more than half of all calories consumed in the world and are therefore of extreme practical importance.
 
 ## Data
 
 The grain yield data comes from [Our World in Data](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [The World Bank](https://data.worldbank.org/indicator/AG.CON.FERT.PT.ZS).
 
-We begin by considering the data from 2019, because that is the most recent year for which complete data is available. Later, we extend our analysis backwards in time.
+We began by considering the data from 2019, because that is the most recent year for which complete data is available. Afterwards, we extended our analysis backwards in time.
 
 ## Exploratory Visualization
 
@@ -49,15 +49,15 @@ Rather than explicitly modeling the relationship between the variables as a non-
 The logistic transformation is of the form 
 
 $$
-f(x) = \frac{a}{1+\exp{-bx + c}} + d
+f(x) = \frac{a}{1+\exp{(-bx + c})} + d
 $$
 
-The parameters $a$, $d$, being linear transformations, have no effect upon efficacy of the linearization and were consequently set to $a = 200$ and $d = -100$ so that the transformed variable could be interpreted as percent fertilizer saturation. The parameter $c$ was set to $0$ with the same purpose in mind.
+The parameters $a$, $d$, being linear transformations, have no effect upon efficacy of the linearization and were consequently set to $a = 200$ and $d = -100$ so that the transformed variable could be interpreted as percent fertilizer saturation. For the same reason, rhe parameter $c$ was set to $0$.
 
-The parameter $b$, however, must be chosen carefully. To achieve linearity, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
+The remaining parameter $b$ had to be chosen carefully. With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
 
 ## Grid Search and Final Model
-Because we only had a single variable to optimize, we exhaustively explored the parameter space with a grid search
+Because we only had a single variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^-3$ and 1, and so we performed the grid search across $10^4$ equally spaced values between $10^-3$ and 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$.
 
 ## Clustering Analysis
 
