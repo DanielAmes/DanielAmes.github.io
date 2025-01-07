@@ -27,5 +27,5 @@ We begin by considering the data for a single year single year, 2020, because th
 ## Reverse Causality
 
 ## Footnotes
-[
+
 
