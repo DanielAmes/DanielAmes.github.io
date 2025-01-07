@@ -24,7 +24,7 @@ To simplify the analysis, we will restrict our attention to grain crops because 
 
 The grain yield data comes from [Our World in Data](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [The World Bank](https://data.worldbank.org/indicator/AG.CON.FERT.PT.ZS).
 
-We begin by considering the data for a single year single year, 2020, because that is the most recent year for which complete data is available. Later, we extend our analysis backwards in time.
+We begin by considering the data from 2019, because that is the most recent year for which complete data is available. Later, we extend our analysis backwards in time.
 
 ## Exploratory Visualization
 
@@ -40,17 +40,32 @@ The second pattern may be due to the fact that reaching the highest attainable y
 
 ![Figure 3]({{ site.baseurl }}/assets/img/FertilizerYieldScatter.png)
 
-Rather than explicitly modeling the relationship between the variables as a non-linear curve with an asymptote, we opted to transform the explanatory variable, fertilizer, in order to linearize the relationship. Of all such transformations, a logistic transformation (sometimes called a sigmoid transformation) seemed most appropriate in light of the patterns observed in the scatterplot. 
+## Model Fitting
+
+Rather than explicitly modeling the relationship between the variables as a non-linear curve with an asymptote, we opted to transform the fertilizer variable in order to linearize the relationship, after which we fit a linear model. Of all such transformations, a logistic transformation (sometimes called a sigmoid transformation) seemed the most appropriate in light of the patterns observed in the scatter plot. 
 
 ## Logistic Transformation of Fertilizer Variable
 
-## Grid Search for Logistic Parameter
+The logistic transformation is of the form 
+
+$$
+f(x) = \frac{a}{1+\exp{-bx + c}} + d
+$$
+
+The parameters $a$, $d$, being linear transformations, have no effect upon efficacy of the linearization and were consequently set to $a = 200$ and $d = -100$ so that the transformed variable could be interpreted as percent fertilizer saturation. The parameter $c$ was set to $0$ with the same purpose in mind.
+
+The parameter $b$, however, must be chosen carefully. To achieve linearity, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
+
+## Grid Search and Final Model
+Because we only had a single variable to optimize, we exhaustively explored the parameter space with a grid search
 
 ## Clustering Analysis
 
 ## Reverse Causality
 
 ## Sources
+
+## Code
 
 ## Footnotes
 
