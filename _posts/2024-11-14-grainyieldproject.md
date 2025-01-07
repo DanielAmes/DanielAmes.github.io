@@ -17,9 +17,11 @@ We want to know whether the same effect is visible on a global scale, where each
 
 To simplify the analysis, we will restrict our attention to grain crops because (1) most countries produce significant quantities of at least one grain crop, (2) yields across different grain crops are highly correlated with one another, and (3) grain crops account for more than half of all calories consumed in the world and are therefore of extreme practical importance.
 
-## Background
+## Data
 
 We begin by considering the data for a single year single year, 2020, because that is the most recent year for which complete data is available.
+
+## Visualations
 ## Logistic Transformation
 
 ## Grid Search for Logistic Parameter
