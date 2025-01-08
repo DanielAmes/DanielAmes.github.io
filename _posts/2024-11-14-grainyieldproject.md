@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Global Patterns of Grain Yield vs. Fertilizer Use"
+title: "Project: Global Patterns of Grain Yield vs. Fertilizer Use"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
 image: #wheatstock.jpg
 hide_related_posts: true
+toc: true
 ---
 
 On the scale of a single plant, it is well known that the application of mineral fertilizers improves plant growth but that it is subject to diminishing returns, and beyond a saturation point, a marginal increase in fertilizer will no longer have any effect upon plant growth.
@@ -63,7 +64,7 @@ The parameters $a$ and $d$, being linear transformations, have no effect upon ef
 The remaining parameter $b$ had to be chosen carefully. With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
 
 ## Grid Search and Final Model
-Because we only had a single variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$.
+Because we only had a single variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$ (the code can be found in the appendix).
 
 ## Clustering Analysis
 
