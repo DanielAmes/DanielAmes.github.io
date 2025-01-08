@@ -32,7 +32,7 @@ To get an idea of how grain yields and fertilizer use separately vary across the
 
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
 
-![Figure 4]({{ site.baseurl }}/assets/img/FertilizerYieldScatter.png)
+![Figure 4]({{ site.baseurl }}/assets/img/scatteryield.png)
 
 Two aspects of the plot attracted our notice:
 
