@@ -5,10 +5,7 @@ author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
 image: #wheatstock.jpg
-hide_related_posts: true
-toc: true
 ---
-{% toc %}
 On the scale of a single plant, it is well known that the application of mineral fertilizers improves plant growth but that it is subject to diminishing returns, and beyond a saturation point, a marginal increase in fertilizer will no longer have any effect upon plant growth.
 
 Thus, in an experiment where the amount of fertilizer is made to vary across subjects, we expect the curve of plant growth as a function of fertilizer to be increasing but also to exhibit an asymptote. An example of what such experimental results look like for phosphorus fertilizer can be seen below (adapted from Alley and Vanlauwe, 2009).
