@@ -6,7 +6,7 @@ categories: journal
 tags: [documentation,sample]
 image: #wheatstock.jpg
 ---
-On the scale of a single plant, it is well known that the application of mineral fertilizers improves plant growth but that it is subject to diminishing returns, and beyond a saturation point, a marginal increase in fertilizer will no longer have any effect upon plant growth.
+On the scale of a single plant, it is well known that the application of mineral fertilizers improves plant growth but that it is a practice subject to diminishing returns, and beyond a saturation point, a marginal increase in fertilizer will no longer have any effect upon plant growth.
 
 Thus, in an experiment where the amount of fertilizer is made to vary across subjects, we expect the curve of plant growth as a function of fertilizer to be increasing but also to exhibit an asymptote. An example of what such experimental results look like for phosphorus fertilizer can be seen below (adapted from Alley and Vanlauwe, 2009).
 
@@ -22,12 +22,12 @@ To simplify the analysis, we restricted our attention to grain crops because (1)
 
 The grain yield data comes from [Our World in Data](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [The World Bank](https://data.worldbank.org/indicator/AG.CON.FERT.ZS). 
 
-The main weakness of the fertilizer data is that it is not specific to grain crops, nor does the data distinguish between nitrogen, phosphorus, and potassium fertilizers. We reasoned that it would nevertheless serve as an approximation of the level of fertilizer applied to grains because in most countries grains account for around a third of total agricultural production.
+The main weakness of the fertilizer data is that it is not specific to grain crops, nor are distinctions made between nitrogen, phosphorus, and potassium fertilizers. We reasoned that it would nevertheless serve as an approximation of the level of fertilizer applied to grains because in most countries grains account for around a third of total agricultural production.
 
 We began by considering the data from 2019, because that is the most recent year for which complete data is available. Afterwards, we extended our analysis backwards in time.
 
 ## Exploratory Visualization
-To get an idea of how grain yields and fertilizer use separately vary across the globe, we created maps of the two variables with the R package _rworldmap_:
+To get an idea of how grain yields and fertilizer usage each vary across the globe, we created maps of the two variables with the R package _rworldmap_:
 
 
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
@@ -42,11 +42,11 @@ Two aspects of the plot attracted our notice:
 
 The first of these patterns is consistent with the observations we made in the introduction concerning the fertilizer curve of a single organism and suggests that at low levels of fertilizer use, differences in fertilizer use have high explanatory power.
 
-The second pattern may be due to the fact that reaching the highest attainable yield is impossible without the use of large quantities of fertilizer, whereas it is possible to use a great deal of fertilizer while still failing to achieve high yields, so that among countries who have neared the fertilizer saturation point, differences in factors like climate, soil quality, crop varieties, agricultural expenditure, and agricultural technology have come to dominate differences in fertilizer use and therefore have greater power to explain differences in yield. Another possible explanation is that the correlation is so strong at low levels of fertilizer use because those countries are generally quite similar to one another, and in fact many of them are located in the same geographical region, Sub-Saharan Africa.
+The second pattern may be due to the fact that reaching the highest attainable yield is impossible without the use of large quantities of fertilizer, whereas it is possible to use a great deal of fertilizer while still failing to achieve high yields, so that among countries who have neared the fertilizer saturation point, differences in factors like climate, soil quality, crop varieties, agricultural expenditure, and agricultural technology have come to dominate differences in fertilizer use and therefore will have greater power to explain differences in yield. Another possible explanation is that the correlation is so strong at low levels of fertilizer usage because those countries are in general quite similar to one another, and in fact, as we can see in the maps, many of them are located in the same geographical region, Sub-Saharan Africa.
 
 ## Model Fitting
 
-Rather than explicitly modeling the relationship between the variables as a non-linear curve with an asymptote, we opted to transform the fertilizer variable in order to linearize the relationship, after which we fit a linear model. Of all such transformations, a logistic transformation (sometimes called a sigmoid transformation) seemed the most appropriate in light of the patterns observed in the scatter plot. 
+Rather than explicitly modeling the relationship between the variables as a non-linear curve with an asymptote, we opted to transform the fertilizer variable in order to linearize the relationship, after which we fit a linear model. Of all such transformations, a logistic transformation seemed the most appropriate in light of the patterns observed in the scatter plot and of the mathematical tractability of the transformation.
 
 ## Logistic Transformation of Fertilizer Variable
 
@@ -56,12 +56,12 @@ $$
 f(x) = \frac{a}{1+\exp{(-bx + c})} + d
 $$
 
-The parameters $a$ and $d$, being linear transformations, have no effect upon efficacy of the linearization and were consequently set to $a = 200$ and $d = -100$, so that the transformed variable could be interpreted as percent fertilizer saturation. For the same reason, the parameter $c$ was set to $0$.
+The parameters $a$ and $d$, being linear transformations, have no effect upon the efficacy of linearization and were consequently set to $a = 200$ and $d = -100$, so that the transformed variable could be interpreted as percent fertilizer saturation. For the same reason, the parameter $c$ was set to $0$.
 
 The remaining parameter $b$ had to be chosen carefully. With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
 
 ## Grid Search and Final Model
-Because we only had a single variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$ (the code can be found in the appendix).
+Because we only had one variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$ (the code can be found in the appendix).
 
 We can see that after the transformation, a linear model fits the data quite well:
 
@@ -69,6 +69,7 @@ We can see that after the transformation, a linear model fits the data quite wel
 
 ## Gaussian Mixture Model
 
+In the post-transformation scatter plot, one can observe some clustering behavior, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model, 
 ## Reverse Causality
 
 ## Sources
