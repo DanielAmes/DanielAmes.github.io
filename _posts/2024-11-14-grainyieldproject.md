@@ -42,7 +42,7 @@ Two aspects of the plot attracted our notice:
 
 The first of these patterns is consistent with the observations we made in the introduction concerning the fertilizer curve of a single organism and suggests that at low levels of fertilizer use, differences in fertilizer use have high explanatory power.
 
-The second pattern may be due to the fact that reaching the highest attainable yield is impossible without the use of large quantities of fertilizer, whereas it is possible to use a great deal of fertilizer while still failing to achieve high yields, so that among countries who have neared the fertilizer saturation point, differences in factors like climate, soil quality, crop varieties, agricultural expenditure, and agricultural technology have come to dominate differences in fertilizer use and therefore will have greater power to explain differences in yield. Another possible explanation is that the correlation is so strong at low levels of fertilizer usage because those countries are in general quite similar to one another, and in fact, as we can see in the maps, many of them are located in the same geographical region, Sub-Saharan Africa.
+The second pattern may be due to the fact that reaching the highest attainable yield is impossible without the use of large quantities of fertilizer, whereas it is possible to use a great deal of fertilizer while still failing to achieve high yields, so that among countries who have neared the fertilizer saturation point, differences in factors like climate, soil quality, crop varieties, agricultural expenditure, and agricultural technology have come to dominate differences in fertilizer use and therefore will have greater power to explain differences in yield. Another possible explanation is that the correlation is so strong at low levels of fertilizer usage because those countries are in general quite similar to one another, and in fact many of them are located in the same geographical region, Sub-Saharan Africa.
 
 ## Model Fitting
 
@@ -58,7 +58,7 @@ $$
 
 The parameters $a$ and $d$, being linear transformations, have no effect upon the efficacy of linearization and were consequently set to $a = 200$ and $d = -100$, so that the transformed variable could be interpreted as percent fertilizer saturation. For the same reason, the parameter $c$ was set to $0$.
 
-The remaining parameter $b$ had to be chosen carefully. With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
+With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
 
 ## Grid Search and Final Model
 Because we only had one variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$ (the code can be found in the appendix).
@@ -67,9 +67,15 @@ We can see that after the transformation, a linear model fits the data quite wel
 
 ![Figure 5]({{ site.baseurl }}/assets/img/Logistic2.png)
 
+Under the fitted model, a one-percent increase in fertilizer saturation is associated with a 40 kg per hectare increase in yield.
+
 ## Gaussian Mixture Model
 
-In the post-transformation scatter plot, one can observe some clustering behavior, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model, 
+In the post-transformation scatter plot, one can observe clusters, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model (GMM), rather than, say, a $k$-means model, because the former can best identify ellipsoidal clusters of different sizes and orientations.
+
+We fit a GMM with the $mclust$ package in R, where the BIC acted as the model selection criterion.
+
+![Figure 5]({{ site.baseurl }}/assets/img/clustgmm2.png)
 ## Reverse Causality
 
 ## Sources
