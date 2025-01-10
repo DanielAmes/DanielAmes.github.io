@@ -83,7 +83,7 @@ We fit a GMM with the $mclust$ package in R, where the BIC acted as the model se
 
 ![Figure 6]({{ site.baseurl }}/assets/img/clustgmm20194.png)
 
-![Figure 7]({{ site.baseurl }}/assets/img/clustermap2019bold.png)
+![Figure 7]({{ site.baseurl }}/assets/img/clustermap2019titleshift.png)
 
 
 
