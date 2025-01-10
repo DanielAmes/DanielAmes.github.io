@@ -29,9 +29,9 @@ We began by considering the data from 2019, because that is the most recent year
 ## Exploratory Visualization
 To get an idea of how grain yields and fertilizer usage each vary across the globe, we created maps of the two variables with the R package _rworldmap_:
 
-![Map A]({{ site.baseurl }}/assets/img/yieldmap2019.png)
+![Map A]({{ site.baseurl }}/assets/img/yieldmap2019bold.png)
 
-![Map B]({{ site.baseurl }}/assets/img/fertilizermap2019.png)
+![Map B]({{ site.baseurl }}/assets/img/fertilizermap2019bold.png)
 
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
 
