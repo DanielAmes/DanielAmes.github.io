@@ -33,6 +33,9 @@ To get an idea of how grain yields and fertilizer usage each vary across the glo
 
 ![Map B]({{ site.baseurl }}/assets/img/fertilizermap2019bold.png)
 
+
+It can immediately be seen that much of the variation in the plots is between geopolitical regions rather than between ecological or climatic regions. 
+
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
 
 ![Figure 4]({{ site.baseurl }}/assets/img/scatter2019.png)
@@ -70,7 +73,7 @@ We can see that after the transformation, a linear model fits the data quite wel
 
 ![Figure 5]({{ site.baseurl }}/assets/img/scatteryield2019.png)
 
-Under the fitted model, a one-percent increase in fertilizer saturation is associated with a 40 kg per hectare increase in yield and Adjusted $R^2 = 0.48$. This effect size is on the same order of magnitude of those observed in an experimental setting on the scale of single organisms.
+Under the fitted model, a one-percent increase in fertilizer saturation is associated with a 40 kg per hectare increase in yield and Adjusted $R^2 = 0.484$. This effect size is on the same order of magnitude of those observed in an experimental setting on the scale of single organisms.
 
 ## Gaussian Mixture Model
 
