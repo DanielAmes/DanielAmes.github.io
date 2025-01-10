@@ -7,7 +7,7 @@ tags: [documentation,sample]
 hide_related_posts: true
 ---
 
-The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, like a statistical _perpetuum mobile_, an impression which can be perplexing to someone like myself, who had only been exposed to the final product and not the reasoning through which it is derived. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
+The idea of the bootstrap is quite simple. However, as its name suggests, it is a device that at first glance seems to produce something from nothing, like a statistical _perpetuum mobile_. To dissolve my own perplexities concerning this matter, I compiled the following notes upon the foundations of the bootstrap.
 
 ## Empirical Distribution
 
@@ -60,7 +60,9 @@ In its most rudimentary form, **the bootstrap is nothing but the application of 
 
 But the beauty and simplicity of the bootstrap lies in the fact that we can choose extremely complex functions of the empirical distrbution without adding complications to the bootstrap procedure.
 
+## Failure Cases
 
+The bootstrap is not the panacea of inferential statistics that it at first may seem. 
 
 ## Code
 ```R

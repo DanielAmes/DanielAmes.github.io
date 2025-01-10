@@ -32,7 +32,7 @@ To get an idea of how grain yields and fertilizer usage each vary across the glo
 
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
 
-![Figure 4]({{ site.baseurl }}/assets/img/scatteryield.png)
+![Figure 4]({{ site.baseurl }}/assets/img/scatter2019.png)
 
 Two aspects of the plot attracted our notice:
 
@@ -60,23 +60,22 @@ The parameters $a$ and $d$, being linear transformations, have no effect upon th
 
 With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
 
-## Grid Search and Final Model
-Because we only had one variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0182$, resulting in a correlation coefficient of $r = 0.702$ (the code can be found in the appendix).
+## Grid Search and Final Linear Model
+Because we only had one variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0184$, resulting in a correlation coefficient of $r = 0.659$ (the code can be found in the appendix).
 
 We can see that after the transformation, a linear model fits the data quite well:
 
-![Figure 5]({{ site.baseurl }}/assets/img/Logistic2.png)
+![Figure 5]({{ site.baseurl }}/assets/img/scatteryield2019.png)
 
 Under the fitted model, a one-percent increase in fertilizer saturation is associated with a 40 kg per hectare increase in yield.
 
 ## Gaussian Mixture Model
 
-In the post-transformation scatter plot, one can observe clusters, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model (GMM), rather than, say, a $k$-means model, because the former can best identify ellipsoidal clusters of different sizes and orientations.
+In the post-transformation scatter plot, one can observe clusters, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model (GMM), rather than, say, a $k$-means model, because the former works by identifying ellipsoidal clusters of different sizes and orientations.
 
 We fit a GMM with the $mclust$ package in R, where the BIC acted as the model selection criterion.
 
-![Figure 5]({{ site.baseurl }}/assets/img/clustgmm2.png)
-## Reverse Causality
+![Figure 5]({{ site.baseurl }}/assets/img/clustgmm2019.png)
 
 ## Sources
 
