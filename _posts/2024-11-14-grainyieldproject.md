@@ -24,7 +24,7 @@ The grain yield data comes from [Our World in Data](https://ourworldindata.org/c
 
 The main weakness of the fertilizer data is that it is not specific to grain crops, nor are distinctions made between nitrogen, phosphorus, and potassium fertilizers. We reasoned that it would nevertheless serve as an approximation of the level of fertilizer applied to grains because in most countries grains account for around a third of total agricultural production.
 
-We began by considering the data from 2019, because that is the most recent year for which complete data is available. Afterwards, we extended our analysis backwards in time.
+We began by considering the data from 2019, because that is the most recent year for which complete data is available.
 
 ## Exploratory Visualization
 To get an idea of how grain yields and fertilizer usage each vary across the globe, we created maps of the two variables with the R package _rworldmap_:
@@ -34,7 +34,7 @@ To get an idea of how grain yields and fertilizer usage each vary across the glo
 ![Map B]({{ site.baseurl }}/assets/img/fertilizermap2019bold.png)
 
 
-It can immediately be seen that much of the variation in the plots is between geopolitical regions rather than between ecological or climatic regions. 
+It can immediately be seen that much of the variation in the plots is between geopolitical regions rather than between ecological or climatic regions. So, for example, most countries in Western Europe have high grain yields, and most of Africa (excepting Egypt) has low levels of fertilizer usage.
 
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
 
@@ -77,16 +77,23 @@ Under the fitted model, a one-percent increase in fertilizer saturation is assoc
 
 ## Gaussian Mixture Model
 
-In the post-transformation scatter plot, one can observe clusters, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model (GMM), rather than, say, a $k$-means model, because the former works by identifying ellipsoidal clusters of different sizes and orientations.
+In the post-transformation scatter plot, one can observe clusters, that is, the data points do not uniformly populate all points along the model line. Not only that, but the clusters that stand out have quite different covariance structures from one another: the cluster to the extreme right seems to vary most vertically and the cluster to the extreme left varies most along the line of the linear model. Such observations naturally suggested a Gaussian Mixture Model (GMM), rather than, say, a $k$-means model, because the former works by identifying clusters with ellipsoidal variance.
 
-We fit a GMM with the $mclust$ package in R, where the BIC acted as the model selection criterion.
+We fit a GMM with the $mclust$ package in R, where the BIC acted as the model selection criterion. The best model according to BIC was an ellipsoidal, equal orientation model with 4 components. The results are plotted below.
 
-![Figure 5]({{ site.baseurl }}/assets/img/clustgmm2019.png)
+![Figure 6]({{ site.baseurl }}/assets/img/clustgmm20194.png)
+
+![Figure 7]({{ site.baseurl }}/assets/img/clustermap2019bold.png)
+
+
 
 ## Sources
 
+* Alley, Marcus & Vanlauwe, Bernard. (2009). The Role of Fertilizers in Integrated Plant Nutrient Management. 
+
+* Sheaffer, C. C., & Moncada, K. M. (2012). Introduction to Agronomy–Food, Crops and Environment.
+
 ## Code
 
-## Footnotes
-
+Github Repo Link
 
