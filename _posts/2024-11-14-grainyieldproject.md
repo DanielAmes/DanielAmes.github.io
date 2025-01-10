@@ -29,6 +29,9 @@ We began by considering the data from 2019, because that is the most recent year
 ## Exploratory Visualization
 To get an idea of how grain yields and fertilizer usage each vary across the globe, we created maps of the two variables with the R package _rworldmap_:
 
+![Map A]({{ site.baseurl }}/assets/img/yieldmap2019.png)
+
+![Map B]({{ site.baseurl }}/assets/img/fertilizermap2019.png)
 
 Below is the scatter plot of grain yield in metric tons produced per hectare against fertilizer in kilograms applied per hectare. 
 
@@ -61,13 +64,13 @@ The parameters $a$ and $d$, being linear transformations, have no effect upon th
 With linearity in mind, the criterion by which we selected the optimal setting of $b$ was the Pearson correlation coefficient of the yield variable and the transformed fertilizer variables, which in this case is equal to the square root of the $R^2$ of an OLS model fit to the two variables.
 
 ## Grid Search and Final Linear Model
-Because we only had one variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0184$, resulting in a correlation coefficient of $r = 0.659$ (the code can be found in the appendix).
+Because we only had one variable to optimize, we exhaustively explored the parameter space with a grid search. From preliminary visualization, we judged that the likely order of magnitude of the optimal parameter value was between $10^{-3}$ and 1, and so we performed the grid search across $10^4$ equally spaced values from $10^{-3}$ to 1. The optimal parameter value that we obtained was $b = 0.0184$, resulting in a correlation coefficient of $r = 0.698$ (the code can be found in the appendix).
 
 We can see that after the transformation, a linear model fits the data quite well:
 
 ![Figure 5]({{ site.baseurl }}/assets/img/scatteryield2019.png)
 
-Under the fitted model, a one-percent increase in fertilizer saturation is associated with a 40 kg per hectare increase in yield.
+Under the fitted model, a one-percent increase in fertilizer saturation is associated with a 40 kg per hectare increase in yield and Adjusted $R^2 = 0.48$. This effect size is on the same order of magnitude of those observed in an experimental setting on the scale of single organisms.
 
 ## Gaussian Mixture Model
 
