@@ -60,10 +60,6 @@ In its most rudimentary form, **the bootstrap is nothing but the application of 
 
 But the beauty and simplicity of the bootstrap lies in the fact that we can choose extremely complex functions of the empirical distrbution without adding complications to the bootstrap procedure.
 
-## Failure Cases
-
-The bootstrap is not the panacea of inferential statistics that it at first may seem. 
-
 ## Code
 ```R
 library(ggplot2)
