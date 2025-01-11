@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bayesianism as a Generalization of Propositional Logic"
+title: "Probability as a Generalization of Propositional Logic"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
