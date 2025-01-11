@@ -33,7 +33,7 @@ $$
 p \to q \Longleftrightarrow P( q = \mbox{T}\mid p = \mbox{T}) = 1
 $$
 
-Then to show that in the language of probability that _modus tollens_ is still a valid form of argument, we apply Bayes' theorem and the complement rule. The premises become $ P( q = \mbox{T}| p = \mbox{T}) = 1 $ and $ P(q = \mbox{F}) = 1 $, and the conclusion is $ P( p = \mbox{T}| q = \mbox{F}) = 0 $. By Bayes' rule:
+Then to show that in the language of probability that _modus tollens_ is still a valid form of argument, we apply Bayes' theorem and the complement rule. The premises become $P( q = \mbox{T}\mid p = \mbox{T}) = 1$ and $P(q = \mbox{F}) = 1$, and the conclusion is $P( p = \mbox{T}\mid q = \mbox{F}) = 0$. By Bayes' rule:
 
 $$P( p = \mbox{T}\mid q = \mbox{F}) = \frac{P( q = \mbox{F}\mid p = \mbox{T})P(p = \mbox{T})}{P(q = \mbox{F})}$$
 
