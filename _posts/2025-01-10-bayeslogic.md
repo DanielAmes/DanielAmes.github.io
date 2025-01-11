@@ -27,4 +27,8 @@ $$\begin{array}{rl}
     \therefore & \neg p
   \end{array}$$
 
-The key to translating these forms to arguments in the language of probability is to realize that logical implication, $ \to $
+The key to translating these forms of arguments into the language of probability is to realize that the probabilistic analogue of logical implication is conditional probability.
+
+$$
+P(q \text{ is true} | p \text{ is true} ) = 1 \longleftrightarrow p \to q \text{ is true}
+$$
