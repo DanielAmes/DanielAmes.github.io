@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Probability as a Generalization of Propositional Logic"
+title: "Notes: Probability as a Generalization of Propositional Logic"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]

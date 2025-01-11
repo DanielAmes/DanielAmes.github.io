@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes on the Foundations of the Bootstrap"
+title: "Notes: Foundations of the Bootstrap"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
