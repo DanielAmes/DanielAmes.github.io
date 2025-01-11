@@ -30,24 +30,27 @@ $$\begin{array}{rl}
 The key to translating these forms of arguments into the language of probability is to realize that the probabilistic analogue of logical implication is conditional probability:
 
 $$
-p \to q \Longleftrightarrow P( q = \mbox{T}\| p = \mbox{T}) = 1
+p \to q \Longleftrightarrow P( q = \mbox{T}\mid p = \mbox{T}) = 1
 $$
 
 Then to show that in the language of probability that _modus tollens_ is still a valid form of argument, we apply Bayes' theorem and the complement rule. The premises become $ P( q = \mbox{T}| p = \mbox{T}) = 1 $ and $ P(q = \mbox{F}) = 1 $, and the conclusion is $ P( p = \mbox{T}| q = \mbox{F}) = 0 $. By Bayes' rule:
 
-$$P( p = \mbox{T}\| q = \mbox{F}) = \frac{P( q = \mbox{F}\| p = \mbox{T})P(p = \mbox{T})}{P(q = \mbox{F})}$$
+$$P( p = \mbox{T}\mid q = \mbox{F}) = \frac{P( q = \mbox{F}\mid p = \mbox{T})P(p = \mbox{T})}{P(q = \mbox{F})}$$
 
 $$
-= P( q = \mbox{F}\| p = \mbox{T})P(p = \mbox{T})
+= P( q = \mbox{F}\mid p = \mbox{T})P(p = \mbox{T})
 $$
 
 Then, by the complement rule,
+
 $$
-P( p = \mbox{T}\| q = \mbox{F}) =  (1 - P( q = \mbox{T}\| p = \mbox{T}))P(p = \mbox{T})
+P( p = \mbox{T}\mid q = \mbox{F}) =  (1 - P( q = \mbox{T}\mid p = \mbox{T}))P(p = \mbox{T})
 $$
+
 $$ 
 = (1 - 1)P(p = \mbox{T})
 $$
+
 $$ 
 = 0
 $$
