@@ -20,7 +20,7 @@ To simplify the analysis, we restricted our attention to grain crops because (1)
 
 ## Data
 
-The grain yield data comes from [**Our World in Data**](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [The World Bank](https://data.worldbank.org/indicator/AG.CON.FERT.ZS). 
+The grain yield data comes from [**Our World in Data**](https://ourworldindata.org/crop-yields), and the fertilizer usage data comes from [**The World Bank**](https://data.worldbank.org/indicator/AG.CON.FERT.ZS). 
 
 The main weakness of the fertilizer data is that it is not specific to grain crops, nor are distinctions made between nitrogen, phosphorus, and potassium fertilizers. We reasoned that it would nevertheless serve as an approximation of the level of fertilizer applied to grains because in most countries grains account for around a third of total agricultural production.
 
