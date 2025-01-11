@@ -30,5 +30,7 @@ $$\begin{array}{rl}
 The key to translating these forms of arguments into the language of probability is to realize that the probabilistic analogue of logical implication is conditional probability:
 
 $$
-P( q = \mbox{T}| p = \mbox{T}) = 1  \Longleftrightarrow p \to q \mbox{ is true}
+p \to q \Longleftrightarrow P( q = \mbox{T}| p = \mbox{T}) = 1  
 $$
+
+Then to show that in the language of probaility _modus ponens_ and _modus tollens_ are still valid forms of argument, we apply Bayes' theorem:
