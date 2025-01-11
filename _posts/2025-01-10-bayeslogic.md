@@ -30,5 +30,5 @@ $$\begin{array}{rl}
 The key to translating these forms of arguments into the language of probability is to realize that the probabilistic analogue of logical implication is conditional probability:
 
 $$
-P(q|p) \leftrightarrow p \to q 
+P( q = \mbox{T}| p = \mbox{T}) = 1  \Longleftrightarrow p \to q \mbox{ is true}
 $$
