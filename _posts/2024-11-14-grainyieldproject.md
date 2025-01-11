@@ -85,6 +85,7 @@ We fit a GMM with the $mclust$ package in R, where the BIC acted as the model se
 
 ![Figure 7]({{ site.baseurl }}/assets/img/clustermap2019titleshift.png)
 
+The grouping of the data brings out how its covariance structure differs across levels of fertilizer saturation. We see one axis contract as the other expands.
 
 
 ## Sources
