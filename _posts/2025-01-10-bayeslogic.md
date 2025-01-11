@@ -56,32 +56,6 @@ $$
 = 0
 $$
 
-Another example is the rule of the contrapositive, which bears a degree of resemblance to the _modus tollens_ argument. The rule states
-
-$$
-p \to q \Longleftrightarrow \neg q \to \neg p 
-$$
-
-And in probabilistic terms, this becomes
-
-$$
-P( q = \mbox{T}\mid p = \mbox{T}) = P( p = \mbox{F}\mid q = \mbox{F}) 
-$$
-
-Again, we use Bayes' rule and the complement rule to prove this.
-
-$$
-P( p = \mbox{F}\mid q = \mbox{F})  = 1 - P( p = \mbox{T}\mid q = \mbox{F}) 
-$$
-
-$$
-= 1 - \frac{P( q = \mbox{F}\mid p = \mbox{T})P(p = \mbox{T})}{P(q = \mbox{F})}
-$$
-
-
-
-
-
 
 ## Footnotes
 
