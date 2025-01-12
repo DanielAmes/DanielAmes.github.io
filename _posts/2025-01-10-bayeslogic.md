@@ -28,35 +28,16 @@ $$\begin{array}{rl}
     \therefore & \neg p
   \end{array}$$
 
-The key to translating these forms of arguments into the language of probability is to realize that the probabilistic analogue of logical implication is conditional probability:
-
+Now, there exist several ways in which the truth table of logical implication can be represented as statements about probabilities; for example, these two are _modus ponens_ and _modus ponens_ in miniature:
 $$
 p \to q \Longleftrightarrow P( q = \mbox{T}\mid p = \mbox{T}) = 1
 $$
-
-Then to show that in the language of probability that _modus tollens_ is still a valid form of argument, we just apply Bayes' theorem and the complement rule. The premises become $P( q = \mbox{T}\mid p = \mbox{T}) = 1$ and $P(q = \mbox{F}) = 1$, and the conclusion is $P( p = \mbox{T}\mid q = \mbox{F}) = 0$. By Bayes' rule:
-
-$$P( p = \mbox{T}\mid q = \mbox{F}) = \frac{P( q = \mbox{F}\mid p = \mbox{T})P(p = \mbox{T})}{P(q = \mbox{F})}$$
-
 $$
-= P( q = \mbox{F}\mid p = \mbox{T})P(p = \mbox{T})
-$$
-
-Then, by the complement rule,
-
-$$
-P( p = \mbox{T}\mid q = \mbox{F}) =  (1 - P( q = \mbox{T}\mid p = \mbox{T}))P(p = \mbox{T})
-$$
-
-$$ 
-= (1 - 1)P(p = \mbox{T})
-$$
-
-$$ 
-= 0
+p \to q \Longleftrightarrow P( p = \mbox{T}\mid q = \mbox{F}) = 0
 $$
 
 
+We can also put so-called inductive syllogisms into the language of probability. These are the types of arguments that people actually can make use of in the real world. 
 ## Footnotes
 
 [^1]: It is common to see the premises flipped, but that has never made sense to me. To my mind it is reasonable that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
