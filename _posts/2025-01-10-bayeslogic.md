@@ -39,7 +39,25 @@ p \to q \Longleftrightarrow P( p = \mbox{T}\mid q = \mbox{F}) = 0
 $$
 
 
-We can also put so-called inductive syllogisms into the language of probability. These are the types of arguments that people actually can make use of in the real world. $\mbox{\color{red}{Red}}$
+Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take probabilities other than 1 and 0. Let's first see what these look like as logical fallacies
+
+### _The Fallacy of Affirming the Consequent_
+$$\begin{array}{rl}
+    & p \to q \\
+    & q \\
+    \hline{}
+    \therefore & p
+  \end{array}$$
+
+### _The Fallacy of Denying the Antecedent_
+$$\begin{array}{rl}
+    & p \to q \\
+    & \neg p \\
+    \hline{}
+    \therefore & \neg q
+  \end{array}$$
+
+These are the types of arguments that people actually can make use of in the real world. $\mbox{\color{red}{Red}}$
 ## Footnotes
 
 [^1]: It is common to see the premises flipped, but that has never made sense to me. To my mind it is reasonable that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
