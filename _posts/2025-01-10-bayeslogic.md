@@ -39,7 +39,9 @@ p \to q \Longleftrightarrow P( p = \mbox{T}\mid q = \mbox{F}) = 0
 $$
 
 
-Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take probabilities other than 1 and 0. Let's first see what these look like as logical fallacies
+## Fallacies Reborn
+
+Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take on probabilities other than 1 and 0. Let's see what these look like as logical fallacies:
 
 ### _The Fallacy of Affirming the Consequent_
 $$\begin{array}{rl}
@@ -57,7 +59,22 @@ $$\begin{array}{rl}
     \therefore & \neg q
   \end{array}$$
 
-These are the types of arguments that people actually can make use of in the real world. $\mbox{\color{red}{Red}}$
+
+To convert these fallacies into valid probability statements, we must introduce the notion of a prior probability. The prior probability of $q$ is $P(q)$. It is our judgement of the plausibility of $q$ before we have learned anything about the plausibility of $p$. So, to translate the first fallacy into a valid statement about probabilities, the prior probability of $q$ must be less than 1. Then, the major premise is again that $P( q = \mbox{T}\mid p = \mbox{T}) = 1$, but the conclusion changes from an assertion of certainty to an increase in plausibility
+
+### _Valid Weak Form of Affirming the Consequent_
+$$\begin{array}{rl}
+    & P( q = \mbox{T}\mid p = \mbox{T}) = 1 \\
+    & q = \mbox{T}\\
+    \hline{}
+    \therefore & P( p = \mbox{T}\mid q = \mbox{T}) > P( p = \mbox{T}) 
+  \end{array}$$
+
+These are the types of arguments that people actually can make use of in the real world. $\color{red}{Red}$
+
+## Bernoulli's Fallacy
+
+
 ## Footnotes
 
 [^1]: It is common to see the premises flipped, but that has never made sense to me. To my mind it is reasonable that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
