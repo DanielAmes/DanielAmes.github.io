@@ -39,7 +39,7 @@ p \to q \Longleftrightarrow P( p = \mbox{T}\mid q = \mbox{F}) = 0
 $$
 
 
-We can also put so-called inductive syllogisms into the language of probability. These are the types of arguments that people actually can make use of in the real world. $\mbox{\textcolor{red}{Red}}$
+We can also put so-called inductive syllogisms into the language of probability. These are the types of arguments that people actually can make use of in the real world. $\mbox{\color{red}{Red}}$
 ## Footnotes
 
 [^1]: It is common to see the premises flipped, but that has never made sense to me. To my mind it is reasonable that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
