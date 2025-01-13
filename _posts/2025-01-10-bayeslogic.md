@@ -63,7 +63,6 @@ $$\begin{array}{rl}
 When we convert these fallacies into valid probability statements, the major premise is again that $P( q = \mbox{T}\mid p = \mbox{T}) = 1$, but the conclusions change from assertions of truth and falsity to ones of greater and lesser plausibility.
 
 ### _Valid Weak Form of Affirming the Consequent_
-
 $$\begin{array}{rl}
     & P( q = \mbox{T}\mid p = \mbox{T}) = 1 \\
     & q = \mbox{T}\\
@@ -72,7 +71,6 @@ $$\begin{array}{rl}
   \end{array}$$
 
 ### _Valid Weak Form of Denying the Antecedent_
-
 $$\begin{array}{rl}
     & P( q = \mbox{T}\mid p = \mbox{T}) = 1 \\
     & p = \mbox{F}\\
