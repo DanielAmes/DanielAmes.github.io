@@ -105,7 +105,11 @@ $$
 P(X > x \mid \Theta = \theta_{0}) \approx 0 \Longrightarrow P(\Theta = \theta_{0} \mid X > x) \approx 0
 $$
 
-On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. The least passing familiarity with Bayes' theorem or even with the definition of conditional probability should be enough to convince one of the fallaciousness of such an argument. We must also know $P(X > x)$ and $P(\Theta = \theta_{0}$ (or at least their ratio) to draw any valid conclusions on the inferential probability from the sampling probability.
+On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. The least passing familiarity with Bayes' theorem or even with the definition of conditional probability should be enough to convince one of the fallaciousness of such an argument. According to Bayes' Theorem, $P(X > x)$ and $P(\Theta = \theta_{0}$ (or at least their ratio) must be known before we can draw any valid conclusions on the inferential probability from the sampling probability.
+
+
+## Sources
+ * _Probability Theory: The Logic of Science_ by Edwin Jaynes
 
 ## Footnotes
 
