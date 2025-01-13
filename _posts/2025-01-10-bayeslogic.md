@@ -97,7 +97,7 @@ $$
 P(A = a \mid B = b) \approx 0 \Longleftrightarrow P(B = b \mid A = a) \approx 0 
 $$
 
-This fallacious line of reasoning comes up all the time in frequentist statistics, where one tries to reach conclusions about inferential probabilities from sampling probabilities. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
+This fallacious line of reasoning comes up all the time in frequentist statistics, when one tries to draw conclusions about inferential probabilities from sampling probabilities. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
 
 $$
 P(X > x \mid \Theta = \theta_{0}) \approx 0 \Longrightarrow P(\Theta = \theta_{0} \mid X > x) \approx 0
