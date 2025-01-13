@@ -39,9 +39,9 @@ p \to q \Longleftrightarrow P( p = \mbox{T}\mid q = \mbox{F}) = 0
 $$
 
 
-## Fallacies Reborn
+## Fallacies Unfallacied
 
-Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take on probabilities other than 1 and 0. Let's see what these look like as logical fallacies:
+Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take on probabilities other than 1 and 0. Let's see what these logical fallacies:
 
 ### _The Fallacy of Affirming the Consequent_
 $$\begin{array}{rl}
@@ -60,9 +60,10 @@ $$\begin{array}{rl}
   \end{array}$$
 
 
-To convert these fallacies into valid probability statements, we must introduce the notion of a prior probability. The prior probability of $q$ is $P(q)$. It is our judgement of the plausibility of $q$ before we have learned anything about the plausibility of $p$. So, to translate the first fallacy into a valid statement about probabilities, the prior probability of $q$ must be less than 1. Then, the major premise is again that $P( q = \mbox{T}\mid p = \mbox{T}) = 1$, but the conclusion changes from an assertion of certainty to an increase in plausibility
+When we convert these fallacies into valid probability statements, the major premise is again that $P( q = \mbox{T}\mid p = \mbox{T}) = 1$, but the conclusions change from assertions of truth and falsity to ones of greater and lesser plausibility.
 
 ### _Valid Weak Form of Affirming the Consequent_
+
 $$\begin{array}{rl}
     & P( q = \mbox{T}\mid p = \mbox{T}) = 1 \\
     & q = \mbox{T}\\
@@ -70,10 +71,41 @@ $$\begin{array}{rl}
     \therefore & P( p = \mbox{T}\mid q = \mbox{T}) > P( p = \mbox{T}) 
   \end{array}$$
 
-These are the types of arguments that people actually can make use of in the real world. $\color{red}{Red}$
+### _Valid Weak Form of Denying the Antecedent_
 
-## Bernoulli's Fallacy
+$$\begin{array}{rl}
+    & P( q = \mbox{T}\mid p = \mbox{T}) = 1 \\
+    & p = \mbox{F}\\
+    \hline{}
+    \therefore & P( q = \mbox{F}\mid p = \mbox{F}) > P( q = \mbox{F}) 
+  \end{array}$$
 
+Both follow from Bayes' theorem. These are the types of arguments that people actually make use of in the real world.
+
+## Bernoulli's Fallacy 
+
+While the probabilistic framework does allow for weak syllogisms of this type that would be considered fallacies in two-valued logic, it also comes with its own fallacies, the most notorious of which being Bernoulli's fallacy, which owes its infamy to its privileged place at the center of frequentist statistics.
+
+
+In short, Bernoulli's fallacy is the assertion that
+
+$$
+P(A = a \mid B = b) \approx 1 \Longleftrightarrow P(B = b \mid A = a) \approx 1 
+$$
+
+Or
+
+$$
+P(A = a \mid B = b) \approx 0 \Longleftrightarrow P(B = b \mid A = a) \approx 0 
+$$
+
+Usually this fallacious line of reasoning comes up when someone tries to make a statement about a inferential probability from a sampling probability. Take the isolated use of $p$-values as an example. A typical $p$-value argument looks something like this
+
+$$
+P(X > x \mid \Theta = \theta_{0}) \approx 0 \to P(\Theta = \theta_{0} \mid X > x) \approx 0
+$$
+
+On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis.
 
 ## Footnotes
 
