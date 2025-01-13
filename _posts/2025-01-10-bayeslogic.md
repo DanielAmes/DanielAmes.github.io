@@ -97,13 +97,13 @@ $$
 P(A = a \mid B = b) \approx 0 \Longleftrightarrow P(B = b \mid A = a) \approx 0 
 $$
 
-This fallacious line of reasoning comes up all the time in frequentist statistics, when one tries to draw conclusions about inferential probabilities from sampling probabilities. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
+This fallacious line of reasoning comes up in frequentist statistics, when one tries to draw conclusions about inferential probabilities from sampling probabilities. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
 
 $$
 P(X > x \mid \Theta = \theta_{0}) \approx 0 \Longrightarrow P(\Theta = \theta_{0} \mid X > x) \approx 0
 $$
 
-On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. The least passing familiarity with Bayes' theorem or even with the definition of conditional probability should be enough to convince one of the fallaciousness of such an argument. According to Bayes' Theorem, $P(X > x)$ and $P(\Theta = \theta_{0}$ (or at least their ratio) must be known before we can draw any valid conclusions on the inferential probability from the sampling probability.
+On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. The least passing familiarity with Bayes' theorem or even with the definition of conditional probability should be enough to convince one of the fallaciousness of such an argument. According to Bayes' Theorem, $P(X > x)$ and $P(\Theta = \theta_{0})$ (or at least their ratio) must be known before we can draw any valid conclusions on the inferential probability from the sampling probability.
 
 
 ## Sources
