@@ -78,7 +78,7 @@ $$\begin{array}{rl}
     \therefore & P( q = \mbox{F}\mid p = \mbox{F}) > P( q = \mbox{F}) 
   \end{array}$$
 
-Both follow from Bayes' theorem. These are the types of arguments that people actually make use of in the real world.
+Both follow from Bayes' theorem. 
 
 ## Bernoulli's Fallacy 
 
