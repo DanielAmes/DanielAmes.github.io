@@ -41,7 +41,7 @@ $$
 
 ## Fallacies Unfallacied
 
-Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take on probabilities other than 1 and 0. Let's see what these logical fallacies:
+Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take on probabilities other than 1 and 0. In their two-valued logic form, we have
 
 ### _The Fallacy of Affirming the Consequent_
 $$\begin{array}{rl}
@@ -99,13 +99,13 @@ $$
 P(A = a \mid B = b) \approx 0 \Longleftrightarrow P(B = b \mid A = a) \approx 0 
 $$
 
-Usually this fallacious line of reasoning comes up when someone tries to make a statement about a inferential probability from a sampling probability. Take the isolated use of $p$-values as an example. A typical $p$-value argument looks something like this
+This fallacious line of reasoning comes up all the time in frequentist statistics, where one tries to reach conclusions about inferential probabilities from sampling probabilities. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
 
 $$
-P(X > x \mid \Theta = \theta_{0}) \approx 0 \to P(\Theta = \theta_{0} \mid X > x) \approx 0
+P(X > x \mid \Theta = \theta_{0}) \approx 0 \Longrightarrow P(\Theta = \theta_{0} \mid X > x) \approx 0
 $$
 
-On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis.
+On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. The least passing familiarity with Bayes' theorem or even with the definition of conditional probability should be enough to convince one of the fallaciousness of such an argument. We must also know $P(X > x)$ and $P(\Theta = \theta_{0}$ (or at least their ratio) to draw any valid conclusions on the inferential probability from the sampling probability.
 
 ## Footnotes
 
