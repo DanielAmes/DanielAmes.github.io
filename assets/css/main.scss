@@ -30,4 +30,8 @@ $medium-color:         #00AB6C;
 $codepen-color:        black;
 $rss-color:            #ff6600;
 
+p {
+  text-align: justify;
+}
+
 @import "-sections-dir";
