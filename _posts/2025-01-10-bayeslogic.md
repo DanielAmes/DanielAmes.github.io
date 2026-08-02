@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Notes: Probability as a Generalization of Propositional Logic and Bernoulli's Fallacy"
+title: "Notes: Probability as a Generalization of Propositional Logic and an Application to Bernoulli's Fallacy"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
 hide_related_posts: true
 ---
 
-According to most schools of Bayesianism, we should interpret the probability of a proposition as a measure of its plausibility. Within this framework, the two values of propositional logic, true and false, become the two extremes of probability, $p = 1$ and $p = 0$. And we can show that all arguments in propositional logic are in fact specific cases of the laws of probability.
+According to most schools of Bayesianism, one should interpret the probability of a proposition as a measure of its plausibility. Within this framework, the two values of propositional logic, true and false, become the two extremes of probability, $p = 1$ and $p = 0$. And one can show that all arguments in propositional logic are in fact specific cases of the laws of probability.
 
 
 As an example, take two of the most commonly encountered forms of argument in propositional logic: _modus ponens_ and _modus tollens_.  These are our classic Aristotelian syllogisms. Symbolically, they look like this[^1]:
@@ -41,7 +41,7 @@ $$
 
 ## Fallacies Unfallacied
 
-Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when we let the propositions take on probabilities other than 1 and 0. In their two-valued logic form, we have
+Furthermore, in the language of probability, two fallacious forms of argument, known as _affirming the consequent_ and _denying the antecedent_ become valid when one lets the propositions take on probabilities other than 1 and 0. In their two-valued logic form, we have
 
 ### _The Fallacy of Affirming the Consequent_
 $$\begin{array}{rl}
