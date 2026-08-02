@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes: Probability as a Generalization of Propositional Logic and an Application to Bernoulli's Fallacy"
+title: "Notes: Probability as a Generalization of Propositional Logic"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
