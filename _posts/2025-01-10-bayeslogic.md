@@ -28,7 +28,7 @@ $$\begin{array}{rl}
     \therefore & \neg p
   \end{array}$$
 
-Now, there exist several ways in which the truth table of logical implication can be represented as statements about probabilities. For example, these two are _modus ponens_ and _modus ponens_ in miniature:
+Now, there exist several ways in which the truth tables of logical implications can be represented as statements about probabilities. For example, these two are _modus ponens_ and _modus ponens_ in miniature:
 
 $$
 p \to q \Longleftrightarrow P( q = \mbox{T}\mid p = \mbox{T}) = 1
