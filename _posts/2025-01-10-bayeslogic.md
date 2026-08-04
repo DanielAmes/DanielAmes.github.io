@@ -83,7 +83,7 @@ $$\begin{array}{rl}
 Both follow from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities of binary statements in the following way:
 
 $$
-P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
+P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( a = \mbox{T})}{P( b = \mbox{T})}P( b = \mbox{T}\mid a = \mbox{T})
 $$
 
 Now, drawing from the premises of the argument, we can plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$, giving us
