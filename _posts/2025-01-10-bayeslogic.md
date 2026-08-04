@@ -78,11 +78,11 @@ $$\begin{array}{rl}
     \therefore & P( b = \mbox{F}\mid a = \mbox{F}) > P( b = \mbox{F}) 
   \end{array}$$
 
-To give a practical example of the first argument, let us imagine that we walk outside and we notice that the ground is wet. Now, our assumption is that the ground will always be wet immediately following a rain storm, or, in probabilistic language, that 
+As an example of the first argument, let us imagine that we walk outside and notice that the ground is wet. Now, our assumption is that the ground will always be wet immediately following a rain storm, or, in probabilistic language, that 
 
 $$P(\mbox{Wet Ground} = \mbox{T} \mid \mbox{Recent Rain Storm} = \mbox{T}) =1$$
 
- The argument tells us that the plausibility of a recent rainstorm given the information that the ground is wet is greater than if we did not have any information: 
+The argument tells us that under this assumption, the plausibility of a recent rainstorm given the information that the ground is wet should be greater than if we did not have any information: 
 
 $$
 P( \mbox{Recent Rain Storm} = \mbox{T}\mid \mbox{Wet Ground} = \mbox{T}) > P( \mbox{Recent Rain Storm} = \mbox{T})
