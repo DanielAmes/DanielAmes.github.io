@@ -66,7 +66,6 @@ When we convert these fallacies into valid probability statements, the major pre
 $$\begin{array}{rl}
     & P( b = \mbox{T}\mid a = \mbox{T}) = 1 \\
     & 0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1\\
-    & b = \mbox{T}\\
     \hline{}
     \therefore & P( a = \mbox{T}\mid b = \mbox{T}) > P( a = \mbox{T}) 
   \end{array}$$
@@ -75,7 +74,6 @@ $$\begin{array}{rl}
 $$\begin{array}{rl}
     & P( b = \mbox{T}\mid a = \mbox{T}) = 1 \\
     & 0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1\\
-    & p = \mbox{F}\\
     \hline{}
     \therefore & P( b = \mbox{F}\mid a = \mbox{F}) > P( b = \mbox{F}) 
   \end{array}$$
