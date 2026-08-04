@@ -14,28 +14,28 @@ As an example, take two of the most commonly encountered forms of argument in pr
 
 ### _Modus Ponens_
 $$\begin{array}{rl}
-    & p \to q \\
-    & p \\
+    & a \to b \\
+    & a \\
     \hline{}
-    \therefore & q
+    \therefore & b
   \end{array}$$
 
 ### _Modus Tollens_
 $$\begin{array}{rl}
-    & p \to q \\
-    & \neg q \\
+    & a \to b \\
+    & \neg b \\
     \hline{}
-    \therefore & \neg p
+    \therefore & \neg a
   \end{array}$$
 
 Now, there exist several ways in which the truth tables of logical implications can be represented as statements about probabilities. For example, these two are _modus ponens_ and _modus ponens_ in miniature:
 
 $$
-p \to q \Longleftrightarrow P( q = \mbox{T}\mid p = \mbox{T}) = 1
+a \to b \Longleftrightarrow P( b = \mbox{T}\mid a = \mbox{T}) = 1
 $$
 
 $$
-p \to q \Longleftrightarrow P( p = \mbox{T}\mid q = \mbox{F}) = 0
+a \to b \Longleftrightarrow P( a = \mbox{T}\mid b = \mbox{F}) = 0
 $$
 
 
@@ -45,22 +45,22 @@ Furthermore, in the language of probability, two fallacious forms of argument, k
 
 ### _The Fallacy of Affirming the Consequent_
 $$\begin{array}{rl}
-    & p \to q \\
-    & q \\
+    & a \to b \\
+    & b \\
     \hline{}
-    \therefore & p
+    \therefore & a
   \end{array}$$
 
 ### _The Fallacy of Denying the Antecedent_
 $$\begin{array}{rl}
-    & p \to q \\
-    & \neg p \\
+    & a \to b \\
+    & \neg a \\
     \hline{}
-    \therefore & \neg q
+    \therefore & \neg b
   \end{array}$$
 
 
-When we convert these fallacies into valid probability statements, the major premise is again that $a \to b$, which in probabilistic notation becomes $P( b = \mbox{T}\mid a = \mbox{T}) = 1$, but we now take the statements _a_ and _b_ to be uncertain, and the conclusions change from assertions of truth and falsity to ones of greater and lesser plausibility (we will use _a_ and _b_ instead of _p_ and _q_ so as to avoid confusion between the statement _p_ and the probability notation of _P_).
+When we convert these fallacies into valid probability statements, the major premise is again that $a \to b$, which in probabilistic notation becomes $P( b = \mbox{T}\mid a = \mbox{T}) = 1$, but we now take the statements _a_ and _b_ to be uncertain, and the conclusions change from assertions of truth and falsity to ones of greater and lesser plausibility.
 
 ### _Valid Weak Form of Affirming the Consequent_
 $$\begin{array}{rl}
