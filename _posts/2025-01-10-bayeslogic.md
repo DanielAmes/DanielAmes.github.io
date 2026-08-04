@@ -78,7 +78,15 @@ $$\begin{array}{rl}
     \therefore & P( b = \mbox{F}\mid a = \mbox{F}) > P( b = \mbox{F}) 
   \end{array}$$
 
-Both follow from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities of binary statements in the following way:
+To give a practical example of the first argument, let us imagine that we walk outside and we notice that the ground is wet. Now, our assumption is that the ground will always be wet immediately following a rain storm, or, in probabilistic language, that $P(\mbox{Wet Ground} = \mbox{T} \mid \mbox{Recent Rain Storm} = \mbox{T}) =1$. The argument tells us that the plausibility of a recent rainstorm given the information is greater than if we did not have any information: 
+
+$$
+P( \mbox{Recent Rain Storm} = \mbox{T}\mid \mbox{Wet Ground} = \mbox{T}) > P( \mbox{Recent Rain Storm} = \mbox{T})
+$$
+
+## Proof of the Validity of the Weak Form of Affirming the Consequent
+
+Both of these arguments follow from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities of binary statements in the following way:
 
 $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
