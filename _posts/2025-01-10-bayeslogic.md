@@ -96,7 +96,7 @@ $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
 $$
 
-Now, drawing from the premises of the argument, we can plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$ on the left-hand side, giving us
+Now, drawing from the premises of the argument, we can plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$ on the right-hand side, giving us
 
 $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \dfrac{P( a = \mbox{T})}{P( b = \mbox{T})}
@@ -108,7 +108,7 @@ $$
 P( a = \mbox{T}\mid b = \mbox{T})P( b = \mbox{T}) = P( a = \mbox{T})
 $$
 
-And, according to the premises, $0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1$. So each term of the above equation must be positive, and our conclusion, $P( b = \mbox{F}\mid a = \mbox{F}) > P( b = \mbox{F})$, follows because on the left side of the equation a positive number is being multipled by a number between 0 and 1 to produce the quantity on the right-hand side. In other words, in the last step of the argument, we use the fact that a proper fraction of a positive number is less than that number.
+And, according to the premises, $0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1$. So each term of the above equation must be positive, and our conclusion, $P( b = \mbox{F}\mid a = \mbox{F}) > P( b = \mbox{F})$, follows from the fact that a proper fraction of a positive number is less than that number.
 
 ## Bernoulli's Fallacy 
 
