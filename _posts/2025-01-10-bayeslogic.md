@@ -143,7 +143,7 @@ On the left we have a small $p$-value, and on the right a statement that is more
 
 [^1]: It is common to see the premises flipped, but it has always made more sense to me that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
 
-[^2]:A sampling probability is the probability of obtaining data given certain assumptions about the data-generating mechanism, such as the parameters of a distrbution that the data are assumed to be drawn from. An inferential probability, the converse, is the probability that an assumption about the data-generating mechanism is true given the data that have been observed.
+[^2]:A sampling probability is the probability of obtaining data given certain assumptions about the data-generating mechanism, such as the parameters of a distrbution that the data are assumed to have been drawn from. An inferential probability, the converse, is the probability that an assumption about the data-generating mechanism is true given the data that have been observed. 
 
 
 
