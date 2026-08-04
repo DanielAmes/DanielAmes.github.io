@@ -127,7 +127,7 @@ $$
 P(A = a \mid B = b) \approx 0 \Longleftrightarrow P(B = b \mid A = a) \approx 0 
 $$
 
-This fallacious line of reasoning arises in frequentist statistics whenever one attempts to draw conclusions about inferential probabilities from sampling probabilities. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
+This fallacious line of reasoning arises in frequentist statistics whenever one attempts to draw conclusions about inferential probabilities from sampling probabilities[^2]. Take the isolated use of $p$-values as an example. A typical $p$-value argument takes the following form
 
 $$
 P(X > x \mid \Theta = \theta_{0}) \approx 0 \Longrightarrow P(\Theta = \theta_{0} \mid X > x) \approx 0
@@ -143,6 +143,7 @@ On the left we have a small $p$-value, and on the right a statement that is more
 
 [^1]: It is common to see the premises flipped, but it has always made more sense to me that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
 
+[^2]:A sampling probability is the probability of obtaining data given certain assumptions about the data-generating mechanism, such as the parameters of a distrbution that the data are assumed to be drawn from. An inferential probability, the reverse, is the probability that an assumption about the data-generating mechanism is true given the data that have been observed.
 
 
 
