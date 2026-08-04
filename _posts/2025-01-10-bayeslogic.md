@@ -90,7 +90,7 @@ $$
 
 ## Proof of the Validity of the Weak Form of Affirming the Consequent
 
-Both of these arguments follow from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities of binary statements in the following way:
+The validity of these arguments follows from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities of binary statements in the following way:
 
 $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
