@@ -86,7 +86,7 @@ $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
 $$
 
-Now, from the premises of our argument, we plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$:
+Now, drawing from the premises of the argument, we can plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$:
 
 $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \dfrac{P( a = \mbox{T})}{P( b = \mbox{T})}
