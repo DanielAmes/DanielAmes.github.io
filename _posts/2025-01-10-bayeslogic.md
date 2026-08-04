@@ -60,7 +60,7 @@ $$\begin{array}{rl}
   \end{array}$$
 
 
-When we convert these fallacies into valid probability statements, the major premise is again that $P( b = \mbox{T}\mid a = \mbox{T}) = 1$, which is just the probabilistic notation for $a \to b$, but the premises conclusions change from assertions of truth and falsity to ones of greater and lesser plausibility (we will use _a_ and _b_ instead of _p_ and _q_ so as to avoid confusion between the statement _p_ and the probability notation of _P_).
+When we convert these fallacies into valid probability statements, the major premise is again that $P( b = \mbox{T}\mid a = \mbox{T}) = 1$, which is just the probabilistic notation for $a \to b$, but the premises and conclusions change from assertions of truth and falsity to ones of greater and lesser plausibility (we will use _a_ and _b_ instead of _p_ and _q_ so as to avoid confusion between the statement _p_ and the probability notation of _P_).
 
 ### _Valid Weak Form of Affirming the Consequent_
 $$\begin{array}{rl}
@@ -86,7 +86,7 @@ $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
 $$
 
-Now, drawing from the premises of the argument, we can plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$:
+Now, drawing from the premises of the argument, we can plug in 1 for $P( b = \mbox{T}\mid a = \mbox{T})$, giving us
 
 $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \dfrac{P( a = \mbox{T})}{P( b = \mbox{T})}
