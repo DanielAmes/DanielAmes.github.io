@@ -80,7 +80,7 @@ $$\begin{array}{rl}
     \therefore & P( b = \mbox{F}\mid a = \mbox{F}) > P( b = \mbox{F}) 
   \end{array}$$
 
-Both follow from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities in the following way:
+Both follow from Bayes' theorem; however, here we will only develop the first of the two arguments in detail. Bayes' theorem relates conditional probabilities of binary statements in the following way:
 
 $$
 P( a = \mbox{T}\mid b = \mbox{T}) = \frac{P( b = \mbox{T}\mid a = \mbox{T})P( a = \mbox{T})}{P( b = \mbox{T})}
