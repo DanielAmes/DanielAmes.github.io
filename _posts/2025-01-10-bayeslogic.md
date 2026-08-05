@@ -108,7 +108,7 @@ $$
 P( a = \mbox{T}\mid b = \mbox{T})P( b = \mbox{T}) = P( a = \mbox{T})
 $$
 
-And, according to the premises, $0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1$, so each term in the above equation must be positive, and our conclusion, $P( a = \mbox{F}\mid b = \mbox{F}) > P( b = \mbox{F})$, follows from the fact that a proper fraction of a positive number is less than that number.
+And, according to the premises, $0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1$, so each term in the above equation must be positive, and our conclusion, $P( a = \mbox{T}\mid b = \mbox{T}) > P( a = \mbox{T})$, follows from the fact that a proper fraction of a positive number is less than that number.
 
 ## Bernoulli's Fallacy 
 
