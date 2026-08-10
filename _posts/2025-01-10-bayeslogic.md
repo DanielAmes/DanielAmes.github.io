@@ -112,7 +112,7 @@ And, according to the premises, $0 < P( a = \mbox{T} ), P( b = \mbox{T} ) < 1$, 
 
 ## Bernoulli's Fallacy 
 
-While the probabilistic framework does allow for weak syllogisms of this type that would be considered fallacies in two-valued logic, it also comes with its own fallacies, the most notorious being Bernoulli's fallacy, which owes its infamy to its privileged place at the center of frequentist statistics.
+While the probabilistic framework does allow for weak syllogisms of this type that would be fallacies in two-valued logic, it also comes with its own fallacies, the most notorious being Bernoulli's fallacy, which owes its relative infamy to its privileged place at the center of the frequentist hypothesis-testing framework.
 
 
 In short, Bernoulli's fallacy is the assertion that
@@ -133,7 +133,7 @@ $$
 P(X > x \mid \Theta = \theta_{0}) \approx 0 \Longrightarrow P(\Theta = \theta_{0} \mid X > x) \approx 0
 $$
 
-On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. A familiarity with Bayes' theorem or with the definition of conditional probability should be enough to convince one of the fallaciousness of the argument: the ratio of $P(X > x)$ and $P(\Theta = \theta_{0})$ must be known before we can apply Bayes theorem and draw any valid conclusions about the inferential probability from the sampling probability.
+On the left we have a small $p$-value, and on the right a statement that is more or less equivalent to the rejection of the null hypothesis. A familiarity with Bayes' theorem or with the definition of conditional probability should be enough to convince one of the fallaciousness of the argument: the ratio of $P(X > x)$ and $P(\Theta = \theta_{0})$ must be known before we can apply Bayes' theorem and draw any valid conclusions about the inferential probability from the sampling probability[^3]. 
 
 
 ## Sources
@@ -144,6 +144,8 @@ On the left we have a small $p$-value, and on the right a statement that is more
 [^1]: It is common to see the premises flipped, but it has always made more sense to me that the inferential rule (the major premise), being the more general statement, should precede the particular application of the minor premise.
 
 [^2]:A sampling probability is the probability of obtaining data given certain assumptions about the data-generating mechanism, such as the parameters of a distrbution that the data are assumed to have been drawn from. An inferential probability, the converse, is the probability that an assumption about the data-generating mechanism is true given the data that have been observed. 
+
+[^3]: In fact, the only circumstance in which the equivalency of the statements holds is when $P(X > x) \approx P(\Theta = \theta_{0})$, but in general, there is no reason to assume that such a relationship exists between the prior distribution of the parameter and the distribution of the data marginalized over all priors. 
 
 
 
