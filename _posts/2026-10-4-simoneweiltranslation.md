@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From <i>Réflexions sur le bon usage des études scolaires en vue de l'amour de Dieu<i> By Simone Weil"
+title: "From <i>Réflexions sur le bon usage des études scolaires en vue de l'amour de Dieu</i> By Simone Weil"
 author: "Daniel Ames"
 categories: journal
 tags: [documentation,sample]
