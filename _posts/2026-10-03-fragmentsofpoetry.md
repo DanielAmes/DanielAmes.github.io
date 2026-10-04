@@ -7,7 +7,7 @@ tags: [documentation,sample]
 hide_related_posts: true
 ---
 
-### "I Have Done the Deed"
+### "I Have Done the Deed."
 
 Unthrust the knife and swallow foolish speech. \\
 The days that fall like leaves upon the ground \\
