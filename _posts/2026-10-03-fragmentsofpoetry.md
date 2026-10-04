@@ -12,14 +12,14 @@ hide_related_posts: true
 Unthrust the knife and swallow foolish speech. \\
 The days that fall like leaves upon the ground \\
 Cannot be taken up again, nor teach \\
-Obedient meekness to a wayward hound. \\
+Obedient meekness to a wayward hound. 
 
 ### Falling
 
 I have heard sparrows chirrup in my sleep \\
 And woken up to winter's glassy stillness: \\
 Just as when plunged into the bitter deep, \\
-I think of Height and reel, so health haunts illness. \\
+I think of Height and reel, so health haunts illness. 
 
 ### Light Pollution
 
