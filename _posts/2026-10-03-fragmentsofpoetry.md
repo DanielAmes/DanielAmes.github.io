@@ -21,7 +21,7 @@ And woken up to winter's glassy stillness: \\
 Just as when plunged into the bitter deep, \\
 I think of Height and reel, so health haunts illness. 
 
-### III. light Pollution
+### III. Light Pollution
 
 At night, above the prideful city's glow, \\
 The stars withdraw their fire, like minor players \\
