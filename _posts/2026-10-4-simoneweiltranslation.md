@@ -12,7 +12,7 @@ hide_related_posts: true
 
 In the first legend of the Grail, it is said that the Grail---a miraculous stone that, possessing the power of the consecrated host, satisfies all hunger---shall belong to whosoever shall be the first to say unto the guardian of the stone, a king three-quarters paralyzed by the most painful wound: "What ails thee?"
 
-The highest point of love of one's neighbor is simply being able to ask them: "What ails thee?" It is knowing that the miserable person exists, not as an element of a set, not as an example of the social category labeled "miserable", but as a person, exactly the same as us, who one day was stricken and marked with an inimitable mark by misfortune and misery. To do so, it is sufficient but indispensable to know how to look at them in a certain way.
+The highest point of love of one's neighbor is simply being able to ask them: "What ails thee?" It is knowing that the miserable person exists, not as an element of a set, not as an example of the social category labeled "miserable", but as a person, exactly the same as us, who one day was stricken and marked with the inimitable mark of misfortune and misery. To do so, it is sufficient but indispensable to know how to look at them in a certain way.
 
 This way of looking is first of all an attentive look, where the soul empties itself of all content of its own in order to receive into itself the being whom it beholds just as they are, in all their truth. Only those who possess the faculty of attention can do it.
 
