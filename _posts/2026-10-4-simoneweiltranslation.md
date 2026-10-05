@@ -16,6 +16,6 @@ The highest point of love of one's neighbor is simply to be able to ask them: "W
 
 This way of looking is first of all an attentive look, where the soul empties itself of all content of its own in order to receive into itself the being whom it beholds just as they are, in all their truth. Only those who possess the faculty of attention can do this.
 
-Thus it is true, though paradoxical, that a Latin composition, a geometry problem---even if one has failed at them---provided that one has accorded to them the proper kind of effort, can make one better able some day later on, if the occasion presents itself, to give to one of the miserable, at the moment of extreme anguish, exactly the aid that may save them."
+Thus it is true, though paradoxical, that a Latin composition, a geometry problem---even if one has failed at them---provided that one has accorded them the proper kind of effort, can make one better able some day later on, if the occasion presents itself, to give to one of the miserable, at the moment of extreme anguish, exactly the aid that may save them."
 
 
