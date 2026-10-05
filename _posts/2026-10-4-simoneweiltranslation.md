@@ -10,7 +10,7 @@ hide_related_posts: true
 
 "...It is not only God's love that is made of the substance of attention. Love of one's neighbor, which we know to be the same love, is made of the same substance. The miserable have no need of anything in this world other than people capable of paying attention to them. The ability to pay attention to one of the miserable is a very rare, very difficult thing; it's almost a miracle; it _is_ a miracle. Almost everyone who thinks they have this ability in fact does not. Warmth, pity, and a ready heart are not enough.
 
-In the first legend of the Grail, it is said that the Grail---a miraculous stone that, possessing the power of the consecrated host, satisfies all hunger---shall belong to whosoever shall be the first to say unto the guardian of the stone, a king three-quarters paralyzed by the most painful wound: "What ails thee?"
+In the first legend of the Grail, it is said that the Grail---a miraculous stone that, possessing the power of the consecrated host, satisfies all hunger---shall belong to whosoever shall be the first to say unto the guardian of the stone, a king three-quarters paralyzed by the most grievous wound: "What ails thee?"
 
 The highest point of love of one's neighbor is simply to be able to ask them: "What ails thee?" It is to know and acknowledge that the miserable person exists, not as an element of a set, not as an example of the social category labeled "miserable", but as a person, exactly the same as us, who one day was stricken and marked by the inimitable mark of misfortune and misery. To do so, it is sufficient but indispensable to know how to look at them in a certain way.
 
